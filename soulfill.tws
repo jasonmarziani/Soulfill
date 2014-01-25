@@ -779,7 +779,7 @@ tp249
 Rp250
 sbsa(dp251
 g12
-I00
+I01
 sg13
 (lp252
 F1090.0
@@ -790,7 +790,7 @@ Tiddler
 p253
 (dp254
 g19
-VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save.\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[Timeout|timed out quest]]
+VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save.\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[(Test) Timeout|timed out quest]]
 p255
 sg21
 Vtimed quest
@@ -801,8 +801,8 @@ g24
 I1
 I25
 I16
-I50
-I18
+I58
+I43
 I5
 I25
 I0
@@ -1620,7 +1620,7 @@ Tiddler
 p508
 (dp509
 g19
-VYour actions were too slow.  
+VWe did not get enough records from you in time.  We could not protect your identity any longer.  <<display revealed>>
 p510
 sg21
 Vtimed out quest
@@ -1631,8 +1631,8 @@ g24
 I1
 I25
 I16
-I50
-I47
+I58
+I9
 I5
 I25
 I0
