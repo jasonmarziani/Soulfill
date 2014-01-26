@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-S'/Users/jasonmarziani/Sites/Soulfill/soulfill.tws'
+V/Users/jmarziani/Sites/Soulfill/soulfill.tws
 p4
 sS'target'
 p5
@@ -164,7 +164,7 @@ Tiddler
 p60
 (dp61
 g19
-VSoulfill\u000a\u000aA audio game.\u000a\u000aHold your iPhone in your hand with headphones on.\u000a\u000aPlay this on the subway.\u000a\u000aTap to [[start menu]].\u000aSwipe up for [[rules]].\u000a<<display "start menu">>\u000a
+VSoulfill\u000a\u000aAn audio game.\u000a\u000aHold your iPhone in your hand with headphones on.\u000a\u000aPlay this on the subway.\u000a\u000aTap to [[start menu]].\u000a<<display "start menu">>\u000a
 p62
 sg21
 Vtitle screen
@@ -173,12 +173,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I13
-I39
-I47
-I5
-I25
+I26
+I0
+I50
+I43
+I6
+I26
 I0
 tp64
 (dp65
@@ -258,27 +258,27 @@ g12
 I00
 sg13
 (lp90
-F190.0
-aF151.0
+F570.0
+aF9.0
 asg15
 (itiddlywiki
 Tiddler
 p91
 (dp92
 g19
-VTo play:\u000aThe narrator will guide you.\u000aRespond to the narrator with gestures on your device.\u000aMake eye contact with strangers.  This is called an encounter.\u000aObserve and record the results.\u000a\u000a<!--\u000aA Successful encounter: \u000aYou look at someone.  They look at you and eye contact is established.  You look away first, ending eye contact.\u000a\u000aUnsuccessful encounters:\u000aCompromised - You make eye contact with someone who was already looking at you.\u000aBreak - The other person looks away first, breaking contact.\u000a-->\u000a\u000aPlease, save the souls of our city.
+VStart gameplay while waiting on the platform.\u000a\u000a<<display "story start">>
 p93
 sg21
-Vrules
+Vwaiting for the train
 p94
 sg23
 g24
 ((I2014
 I1
 I25
-I12
-I30
-I24
+I13
+I39
+I5
 I5
 I25
 I0
@@ -288,7 +288,7 @@ tp97
 Rp98
 sg29
 (lp99
-Vmenu
+Vplatform
 p100
 asg31
 g24
@@ -296,8 +296,8 @@ g24
 I1
 I25
 I12
-I23
-I50
+I31
+I3
 I5
 I25
 I0
@@ -310,18 +310,18 @@ g12
 I00
 sg13
 (lp106
-F570.0
-aF9.0
+F569.0
+aF158.0
 asg15
 (itiddlywiki
 Tiddler
 p107
 (dp108
 g19
-VStart gameplay while waiting on the platform.\u000a\u000a<<display "story start">>
+Vstart gameplay while already aboard the train.\u000a\u000a<<display "story start">>
 p109
 sg21
-Vwaiting for the train
+Von the train
 p110
 sg23
 g24
@@ -329,8 +329,8 @@ g24
 I1
 I25
 I13
-I39
-I5
+I41
+I9
 I5
 I25
 I0
@@ -340,7 +340,7 @@ tp113
 Rp114
 sg29
 (lp115
-Vplatform
+Vtrain
 p116
 asg31
 g24
@@ -349,7 +349,7 @@ I1
 I25
 I12
 I31
-I3
+I33
 I5
 I25
 I0
@@ -362,29 +362,29 @@ g12
 I00
 sg13
 (lp122
-F569.0
-aF158.0
+F280.0
+aF434.0
 asg15
 (itiddlywiki
 Tiddler
 p123
 (dp124
 g19
-Vstart gameplay while already aboard the train.\u000a\u000a<<display "story start">>
+VThese souls will thank us one day.  Or perhaps not.  That will be determined by our success.  Our kind possess a great internal energy.  It's the stuff that brings vigor to the body, laughter to the lips, and passion to the heart. We transfer this energy through the eyes.  \u000a\u000aTo begin, make eye contact with someone nearby.\u000a\u000aWe call this an <<encounter>>.\u000a\u000aTap at any time to record an <<encounter>>.\u000a\u000aDouble-Tap when you [[complete your first encounter]].\u000a\u000a
 p125
 sg21
-Von the train
+Vstory start
 p126
 sg23
 g24
 ((I2014
 I1
-I25
+I26
+I1
+I35
 I13
-I41
-I9
-I5
-I25
+I6
+I26
 I0
 tp127
 (dp128
@@ -392,7 +392,7 @@ tp129
 Rp130
 sg29
 (lp131
-Vtrain
+Vtutorial
 p132
 asg31
 g24
@@ -400,8 +400,8 @@ g24
 I1
 I25
 I12
-I31
-I33
+I34
+I21
 I5
 I25
 I0
@@ -414,27 +414,27 @@ g12
 I00
 sg13
 (lp138
-F280.0
-aF435.0
+F424.0
+aF434.0
 asg15
 (itiddlywiki
 Tiddler
 p139
 (dp140
 g19
-VThese souls will thank us one day.  Or perhaps not.  That will be determined by our success.  Our kind possess a great internal energy.  It's the stuff that brings vigor to the body, laughter to the lips, and passion to the heart. We transfer this energy through the eyes.  \u000a\u000aTo being, make eye contact with someone nearby.\u000a\u000aWe call this an <<encounter>>.\u000a\u000aTap at any time to record an <<encounter>>.\u000a\u000aDouble-Tap when you [[complete your first encounter]].\u000a\u000a
+VOur gift is not an easy one to posses.  Those we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.\u000a\u000aEstablish 2 new <font color="#ab218e">Encounters</font>\u000a\u000aTap when [[complete|second encounter complete]].\u000a\u000a\u000a\u000a
 p141
 sg21
-Vstory start
+Vcomplete your first encounter
 p142
 sg23
 g24
 ((I2014
 I1
 I25
-I16
-I33
-I51
+I15
+I26
+I38
 I5
 I25
 I0
@@ -452,8 +452,8 @@ g24
 I1
 I25
 I12
-I34
-I21
+I43
+I30
 I5
 I25
 I0
@@ -466,7 +466,7 @@ g12
 I00
 sg13
 (lp154
-F424.0
+F721.0
 aF434.0
 asg15
 (itiddlywiki
@@ -474,21 +474,21 @@ Tiddler
 p155
 (dp156
 g19
-VOur gift is not an easy one to posses.  Those we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.\u000a\u000aEstablish 2 new <font color="#ab218e">Encounters</font>\u000a\u000aTap when [[complete|second encounter complete]].\u000a\u000a\u000a\u000a
+VWith any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They meld their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presence.  You will know them.  When you establish an <font color="#ab218e">Encounter</font>, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.\u000a\u000aDo not establish an <font color="#ab218e">Encounter</font> with someone who is already looking at you.  <font color="#f36e21">This is called a Reveal</font>.\u000a\u000aIf you are fallen by our enemy, if you are <font color="#f36e21">Revealed</font>, you must swipe down.\u000a\u000a<!-- PERSIST DOWNWARD SWIPE AS ENDGAME SCENARIO -->\u000a\u000a[[continue|tutorial complete]]
 p157
 sg21
-Vcomplete your first encounter
+Vthird encounter complete
 p158
 sg23
 g24
 ((I2014
 I1
-I25
-I15
 I26
-I38
-I5
-I25
+I1
+I33
+I9
+I6
+I26
 I0
 tp159
 (dp160
@@ -496,62 +496,10 @@ tp161
 Rp162
 sg29
 (lp163
-Vtutorial
-p164
-asg31
-g24
-((I2014
-I1
-I25
-I12
-I43
-I30
-I5
-I25
-I0
-tp165
-(dp166
-tp167
-Rp168
-sbsa(dp169
-g12
-I00
-sg13
-(lp170
-F721.0
-aF434.0
-asg15
-(itiddlywiki
-Tiddler
-p171
-(dp172
-g19
-VWith any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They meld their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presense.  You will know them.  When you establish an <font color="#ab218e">Encounter</font>, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.\u000a\u000aDo not establish an <font color="#ab218e">Encounter</font> with someone who is already looking at you.  <font color="#f36e21">This is called a Reveal</font>.\u000a\u000aIf you are fallen by our enemy, if you are <font color="#f36e21">Revealed</font>, you must swipe down.\u000a\u000a<!-- PERSIST DOWNWARD SWIPE AS ENDGAME SCENARIO -->\u000a\u000a[[continue|tutorial complete]]
-p173
-sg21
-Vthird encounter complete
-p174
-sg23
-g24
-((I2014
-I1
-I25
-I15
-I27
-I20
-I5
-I25
-I0
-tp175
-(dp176
-tp177
-Rp178
-sg29
-(lp179
 Vcommon
-p180
+p164
 aVtutorial
-p181
+p165
 asg31
 g24
 ((I2014
@@ -563,49 +511,49 @@ I18
 I5
 I25
 I0
-tp182
-(dp183
-tp184
-Rp185
-sbsa(dp186
+tp166
+(dp167
+tp168
+Rp169
+sbsa(dp170
 g12
 I00
 sg13
-(lp187
+(lp171
 F203.0
 aF620.0
 asg15
 (itiddlywiki
 Tiddler
-p188
-(dp189
+p172
+(dp173
 g19
-VThe enemy is opun you.  You have been <font color="#f36e21">Revealed</font>, your powers taken, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.\u000a\u000a\u000a[[Game Over.|Start]]
-p190
+VThe enemy is upon you.  You have been <font color="#f36e21">Revealed</font>, your powers taken, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.\u000a\u000a\u000a[[Game Over.|Start]]
+p174
 sg21
 Vrevealed
-p191
+p175
 sg23
 g24
 ((I2014
 I1
-I25
-I16
+I26
+I1
+I33
+I59
 I6
-I34
-I5
-I25
+I26
 I0
-tp192
-(dp193
-tp194
-Rp195
+tp176
+(dp177
+tp178
+Rp179
 sg29
-(lp196
+(lp180
 Vcommon
-p197
+p181
 aVending
-p198
+p182
 asg31
 g24
 ((I2014
@@ -614,6 +562,58 @@ I25
 I13
 I1
 I15
+I5
+I25
+I0
+tp183
+(dp184
+tp185
+Rp186
+sbsa(dp187
+g12
+I00
+sg13
+(lp188
+F570.0
+aF434.0
+asg15
+(itiddlywiki
+Tiddler
+p189
+(dp190
+g19
+VTake heed, have any of your subjects broken the <font color="#ab218e">Encounter</font>?  This you must observe.  If your subject looks away from you before you do, <font color="#f36e21">this is called a Break</font>.  A <font color="#f36e21">Break</font> must be recorded immediately.  These souls are left exposed.  When this occurs, we will conviene a tribunal and provide you with additional direction.\u000a\u000aRecord a <font color="#f36e21">Break</font> by swiping up.\u000a\u000aIt's time to save yet another.\u000a\u000aTap when [[complete|third encounter complete]].
+p191
+sg21
+Vsecond encounter complete
+p192
+sg23
+g24
+((I2014
+I1
+I25
+I15
+I26
+I50
+I5
+I25
+I0
+tp193
+(dp194
+tp195
+Rp196
+sg29
+(lp197
+Vtutorial
+p198
+asg31
+g24
+((I2014
+I1
+I25
+I13
+I5
+I16
 I5
 I25
 I0
@@ -626,27 +626,27 @@ g12
 I00
 sg13
 (lp204
-F570.0
-aF434.0
+F875.0
+aF435.0
 asg15
 (itiddlywiki
 Tiddler
 p205
 (dp206
 g19
-VTake heed, have any of your subjects broken the <font color="#ab218e">Encounter</font>?  This you must observe.  If your subject looks away from you before you do, <font color="#f36e21">this is called a Break</font>.  A <font color="#f36e21">Break</font> must be recorded immediately.  These souls are left exposed.  When this occurs, we will conviene a tribunal and provide you with additional direction.\u000a\u000aRecord a <font color="#f36e21">Break</font> by swiping up.\u000a\u000aIt's time to save yet another.\u000a\u000aTap when [[complete|third encounter complete]].
+VIf at any time you enter a train or exit a train, we must be made aware.  This is called <font color="e5d01d">Context</font>.  Your missions will depend on your <font color="e5d01d">Context</font>.\u000a\u000aSwipe left at any time to change your <font color="e5d01d">Context</font>.\u000a\u000a[[continue|quest proxy]]
 p207
 sg21
-Vsecond encounter complete
+Vtutorial complete
 p208
 sg23
 g24
 ((I2014
 I1
 I25
-I15
-I26
-I50
+I16
+I42
+I33
 I5
 I25
 I0
@@ -664,8 +664,8 @@ g24
 I1
 I25
 I13
-I5
-I16
+I13
+I35
 I5
 I25
 I0
@@ -678,7 +678,7 @@ g12
 I00
 sg13
 (lp220
-F875.0
+F8.0
 aF435.0
 asg15
 (itiddlywiki
@@ -686,19 +686,19 @@ Tiddler
 p221
 (dp222
 g19
-VIf at any time you enter a train or exit a train, we must be made aware.  This is called <font color="e5d01d">Context</font>.  Your missions will depend on your <font color="e5d01d">Context</font>.\u000a\u000aSwipe left at any time to change your <font color="e5d01d">Context</font>.\u000a\u000a[[continue|quest proxy]]
+V<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>\u000a\u000abody {\u000a  margin: 2%;\u000a}\u000a#passages{\u000a  margin: 0;\u000a  padding: 0;\u000a  border: 0;\u000a  width:96%;\u000a  margin: auto;\u000a}\u000a.passage {\u000a  font-size:6em;\u000a  font-weight: normal;\u000a  /*font-family:\u201dcourier new\u201d !important; */\u000a  font-family: 'Exo 2', sans-serif;\u000a  color: #888;\u000a  text-shadow: #888 0 0 0.05em;\u000a}\u000a@media screen and (max-width: 960px) {\u000a  .passage {\u000a    font-size: 4em;\u000a  }\u000a}\u000a@media screen and (max-width: 640px) {\u000a  .passage {\u000a    font-size: 3em;\u000a  }\u000a}\u000aa.internalLink, a.externalLink {\u000a  color: #ddd;\u000a  text-shadow: #ddd 0 0 0.07em;\u000a}\u000aa.internalLink:hover, a.externalLink:hover {\u000a  color: #fff;\u000a  text-decoration: none;\u000a  text-shadow: #fff 0 0 0.09em;\u000a}\u000aa:visited { \u000acolor:#a1a1a1; \u000atext-decoration: line-through;\u000a}\u000a\u000a#sidebar {\u000a	display:none;\u000a}
 p223
 sg21
-Vtutorial complete
+VClosed In
 p224
 sg23
 g24
 ((I2014
 I1
 I25
-I16
-I42
-I33
+I13
+I34
+I24
 I5
 I25
 I0
@@ -708,7 +708,7 @@ tp227
 Rp228
 sg29
 (lp229
-Vtutorial
+Vstylesheet
 p230
 asg31
 g24
@@ -716,8 +716,8 @@ g24
 I1
 I25
 I13
-I13
-I35
+I33
+I48
 I5
 I25
 I0
@@ -730,27 +730,27 @@ g12
 I00
 sg13
 (lp236
-F8.0
-aF435.0
+F1090.0
+aF25.0
 asg15
 (itiddlywiki
 Tiddler
 p237
 (dp238
 g19
-V<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>\u000a\u000abody {\u000a  margin: 2%;\u000a}\u000a#passages{\u000a  margin: 0;\u000a  padding: 0;\u000a  border: 0;\u000a  width:96%;\u000a  margin: auto;\u000a}\u000a.passage {\u000a  font-size:6em;\u000a  font-weight: normal;\u000a  /*font-family:\u201dcourier new\u201d !important; */\u000a  font-family: 'Exo 2', sans-serif;\u000a  color: #888;\u000a  text-shadow: #888 0 0 0.05em;\u000a}\u000a@media screen and (max-width: 960px) {\u000a  .passage {\u000a    font-size: 4em;\u000a  }\u000a}\u000a@media screen and (max-width: 640px) {\u000a  .passage {\u000a    font-size: 3em;\u000a  }\u000a}\u000aa.internalLink, a.externalLink {\u000a  color: #ddd;\u000a  text-shadow: #ddd 0 0 0.07em;\u000a}\u000aa.internalLink:hover, a.externalLink:hover {\u000a  color: #fff;\u000a  text-decoration: none;\u000a  text-shadow: #fff 0 0 0.09em;\u000a}\u000aa:visited { \u000acolor:#a1a1a1; \u000atext-decoration: line-through;\u000a}\u000a\u000a#sidebar {\u000a	display:none;\u000a}
+VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save.\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[(Test) Timeout|timed out quest]]
 p239
 sg21
-VClosed In
+Vtimed quest
 p240
 sg23
 g24
 ((I2014
 I1
 I25
-I13
-I34
-I24
+I16
+I58
+I43
 I5
 I25
 I0
@@ -760,16 +760,16 @@ tp243
 Rp244
 sg29
 (lp245
-Vstylesheet
+Vquest
 p246
 asg31
 g24
 ((I2014
 I1
 I25
-I13
-I33
-I48
+I14
+I27
+I25
 I5
 I25
 I0
@@ -782,18 +782,18 @@ g12
 I00
 sg13
 (lp252
-F1090.0
-aF25.0
+I1088
+aI169
 asg15
 (itiddlywiki
 Tiddler
 p253
 (dp254
 g19
-VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save.\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[(Test) Timeout|timed out quest]]
+VWe have reason to believe you may have been comprimised.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will first <font color="#f36e21">Break</font> an encounter.  That is how you will know.  But beware, they will be quick to \u000a\u000aFind someone that <font color="#f36e21">Breaks</font> an <<encounter>> without a <<reveal>>.\u000a\u000aRecord your <<encounter>> progress.\u000a\u000a<<questcomplete>>\u000a\u000a\u000a
 p255
 sg21
-Vtimed quest
+Vchallenge quest
 p256
 sg23
 g24
@@ -801,8 +801,8 @@ g24
 I1
 I25
 I16
-I58
-I43
+I41
+I52
 I5
 I25
 I0
@@ -820,8 +820,8 @@ g24
 I1
 I25
 I14
-I27
-I25
+I32
+I58
 I5
 I25
 I0
@@ -834,27 +834,27 @@ g12
 I00
 sg13
 (lp268
-I1088
-aI169
+I581
+aI605
 asg15
 (itiddlywiki
 Tiddler
 p269
 (dp270
 g19
-VWe have reason to believe you may have been comprimised.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will first <font color="#f36e21">Break</font> an encounter.  That is how you will know.  But beware, they will be quick to \u000a\u000aFind someone that <font color="#f36e21">Breaks</font> an <<encounter>> without a <<reveal>>.\u000a\u000aRecord your <<encounter>> progress.\u000a\u000a<<questcomplete>>\u000a\u000a\u000a
+V<font color="#ab218e">Encounter</font>\u000a<font color="#f36e21">Break</font>\u000a<font color="#f36e21">Reveal</font>\u000a<font color="e5d01d">Context</font>
 p271
 sg21
-Vchallenge quest
+Vinline formats
 p272
 sg23
 g24
 ((I2014
 I1
 I25
-I16
-I41
-I52
+I15
+I28
+I43
 I5
 I25
 I0
@@ -864,16 +864,16 @@ tp275
 Rp276
 sg29
 (lp277
-Vquest
+Vstyle
 p278
 asg31
 g24
 ((I2014
 I1
 I25
-I14
-I32
-I58
+I15
+I27
+I56
 I5
 I25
 I0
@@ -886,27 +886,27 @@ g12
 I00
 sg13
 (lp284
-I581
-aI605
+F1234.0
+aF24.0
 asg15
 (itiddlywiki
 Tiddler
 p285
 (dp286
 g19
-V<font color="#ab218e">Encounter</font>\u000a<font color="#f36e21">Break</font>\u000a<font color="#f36e21">Reveal</font>\u000a<font color="e5d01d">Context</font>
+VYou can stand down.  Another operative nearby has flushed out the enemy and counteracted this measure.\u000a\u000aWhile the immediate danger has passed, do not drop guard.  Persist with purpose and caution.\u000a\u000aDouble-tap to [[continue|quest proxy]]\u000a
 p287
 sg21
-Vinline formats
+Vtimed quest complete
 p288
 sg23
 g24
 ((I2014
 I1
 I25
-I15
-I28
-I43
+I16
+I7
+I32
 I5
 I25
 I0
@@ -916,7 +916,7 @@ tp291
 Rp292
 sg29
 (lp293
-Vstyle
+Vcomplete
 p294
 asg31
 g24
@@ -924,8 +924,8 @@ g24
 I1
 I25
 I15
-I27
-I56
+I30
+I38
 I5
 I25
 I0
@@ -938,18 +938,18 @@ g12
 I00
 sg13
 (lp300
-F1234.0
-aF24.0
+F767.0
+aF82.0
 asg15
 (itiddlywiki
 Tiddler
 p301
 (dp302
 g19
-VYou can stand down.  Another operative nearby has flushed out the enemy and counteracted this measure.\u000a\u000aWhile the immediate danger has passed, do not drop guard.  Persist with purpose and caution.\u000a\u000aDouble-tap to [[continue|quest proxy]]\u000a
+V<<display either("timed quest","challenge quest","repeat quest", "hold quest", "pace quest")>>
 p303
 sg21
-Vtimed quest complete
+Vquest proxy
 p304
 sg23
 g24
@@ -957,8 +957,8 @@ g24
 I1
 I25
 I16
-I7
-I32
+I48
+I23
 I5
 I25
 I0
@@ -968,7 +968,7 @@ tp307
 Rp308
 sg29
 (lp309
-Vcomplete
+Vproxy
 p310
 asg31
 g24
@@ -976,8 +976,8 @@ g24
 I1
 I25
 I15
-I30
-I38
+I33
+I59
 I5
 I25
 I0
@@ -990,18 +990,18 @@ g12
 I00
 sg13
 (lp316
-F767.0
-aF82.0
+F1086.0
+aF321.0
 asg15
 (itiddlywiki
 Tiddler
 p317
 (dp318
 g19
-V<<display either("timed quest","challenge quest","repeat quest", "hold quest", "pace quest")>>
+VThere is a soul that's exposed in your proximity.  It will not be long until an enemy makes contact.  You must perform a repeat <<encounter>> to safely guide this person from danger.\u000a\u000aCreate an <<encounter>>.  Then repeat the <<encounter>> with the same person.\u000a\u000a<<questcomplete>>
 p319
 sg21
-Vquest proxy
+Vrepeat quest
 p320
 sg23
 g24
@@ -1010,7 +1010,7 @@ I1
 I25
 I16
 I48
-I23
+I4
 I5
 I25
 I0
@@ -1020,7 +1020,7 @@ tp323
 Rp324
 sg29
 (lp325
-Vproxy
+Vquest
 p326
 asg31
 g24
@@ -1028,8 +1028,8 @@ g24
 I1
 I25
 I15
-I33
-I59
+I48
+I36
 I5
 I25
 I0
@@ -1042,18 +1042,18 @@ g12
 I00
 sg13
 (lp332
-F1086.0
-aF321.0
+I361
+aI619
 asg15
 (itiddlywiki
 Tiddler
 p333
 (dp334
 g19
-VThere is a soul that's exposed in your proximity.  It will not be long until an enemy makes contact.  You must perform a repeat <<encounter>> to safely guide this person from danger.\u000a\u000aCreate an <<encounter>>.  Then repeat the <<encounter>> with the same person.\u000a\u000a<<questcomplete>>
+VYou only have seconds.  The <font color="#f36e21">Reveal</font> is not complete.  But you must move.  And they must not follow.\u000a\u000aTurn, move, go.  Do not create an <font color="#ab218e">Encounter</font> during your excape.\u000a\u000a<!-- SINGLE TAP / ENCOUNTER IS A LOSS -->\u000aDouble-tap to <<return>>
 p335
 sg21
-Vrepeat quest
+Vreveal attempt
 p336
 sg23
 g24
@@ -1061,8 +1061,8 @@ g24
 I1
 I25
 I16
-I48
 I4
+I35
 I5
 I25
 I0
@@ -1072,7 +1072,7 @@ tp339
 Rp340
 sg29
 (lp341
-Vquest
+Vredeem
 p342
 asg31
 g24
@@ -1080,8 +1080,8 @@ g24
 I1
 I25
 I15
-I48
-I36
+I58
+I24
 I5
 I25
 I0
@@ -1094,29 +1094,29 @@ g12
 I00
 sg13
 (lp348
-I359
-aI620
+F1082.0
+aF476.0
 asg15
 (itiddlywiki
 Tiddler
 p349
 (dp350
 g19
-VYou only have seconds.  The <font color="#f36e21">Reveal</font> is not complete.  But you must move.  And they must not follow.\u000a\u000aTurn, move, go.  Do not create an <font color="#ab218e">Encounter</font> during your excape.\u000a\u000a<!-- SINGLE TAP / ENCOUNTER IS A LOSS -->\u000aDouble-tap to <<return>>
+VWe've detected an anomaly.  A wide open soul, hyper-exposed.  There is a chance this soul will start to consume proximity souls if the void regresses any further.  Help this being and save the others that surround.\u000a\u000aCreate an <<encounter>> and hold for as long as possible.\u000a\u000aTouch and hold device during the <<encounter>> to record.\u000a\u000a<<questcomplete>>
 p351
 sg21
-Vreveal attempt
+Vhold quest
 p352
 sg23
 g24
 ((I2014
 I1
-I25
-I16
-I4
-I35
-I5
-I25
+I26
+I1
+I33
+I34
+I6
+I26
 I0
 tp353
 (dp354
@@ -1124,16 +1124,16 @@ tp355
 Rp356
 sg29
 (lp357
-Vredeem
+Vquest
 p358
 asg31
 g24
 ((I2014
 I1
 I25
-I15
-I58
-I24
+I16
+I22
+I55
 I5
 I25
 I0
@@ -1146,18 +1146,18 @@ g12
 I00
 sg13
 (lp364
-F1082.0
-aF476.0
+F579.0
+aF777.0
 asg15
 (itiddlywiki
 Tiddler
 p365
 (dp366
 g19
-VWe've detected an anomoly.  A wide open soul, hyper-exposed.  There is a chance this soul will start to consume proximity souls if the void regresses any further.  Help this being and save the others that surround.\u000a\u000aCreate an <<encounter>> and hold for as long as possible.\u000a\u000aTouch and hold device during the <<encounter>> to record.\u000a\u000a<<questcomplete>>
+V<font color="#ab218e">Encounter</font>
 p367
 sg21
-Vhold quest
+Vencounter
 p368
 sg23
 g24
@@ -1165,8 +1165,8 @@ g24
 I1
 I25
 I16
-I41
-I31
+I27
+I54
 I5
 I25
 I0
@@ -1176,7 +1176,7 @@ tp371
 Rp372
 sg29
 (lp373
-Vquest
+Vinline
 p374
 asg31
 g24
@@ -1184,8 +1184,8 @@ g24
 I1
 I25
 I16
-I22
-I55
+I27
+I32
 I5
 I25
 I0
@@ -1198,18 +1198,18 @@ g12
 I00
 sg13
 (lp380
-F579.0
-aF777.0
+F706.0
+aF776.0
 asg15
 (itiddlywiki
 Tiddler
 p381
 (dp382
 g19
-V<font color="#ab218e">Encounter</font>
+V<font color="#f36e21">Break</font>
 p383
 sg21
-Vencounter
+Vbreak
 p384
 sg23
 g24
@@ -1217,8 +1217,8 @@ g24
 I1
 I25
 I16
-I27
-I54
+I28
+I12
 I5
 I25
 I0
@@ -1236,8 +1236,8 @@ g24
 I1
 I25
 I16
-I27
-I32
+I28
+I3
 I5
 I25
 I0
@@ -1250,18 +1250,18 @@ g12
 I00
 sg13
 (lp396
-F706.0
-aF776.0
+I831
+aI775
 asg15
 (itiddlywiki
 Tiddler
 p397
 (dp398
 g19
-V<font color="#f36e21">Break</font>
+V<font color="#f36e21">Reveal</font>
 p399
 sg21
-Vbreak
+Vreveal
 p400
 sg23
 g24
@@ -1270,7 +1270,7 @@ I1
 I25
 I16
 I28
-I12
+I31
 I5
 I25
 I0
@@ -1289,7 +1289,7 @@ I1
 I25
 I16
 I28
-I3
+I15
 I5
 I25
 I0
@@ -1302,18 +1302,18 @@ g12
 I00
 sg13
 (lp412
-I831
-aI775
+I957
+aI774
 asg15
 (itiddlywiki
 Tiddler
 p413
 (dp414
 g19
-V<font color="#f36e21">Reveal</font>
+V<font color="e5d01d">Context</font>
 p415
 sg21
-Vreveal
+Vcontext
 p416
 sg23
 g24
@@ -1322,7 +1322,7 @@ I1
 I25
 I16
 I28
-I31
+I49
 I5
 I25
 I0
@@ -1341,7 +1341,7 @@ I1
 I25
 I16
 I28
-I15
+I39
 I5
 I25
 I0
@@ -1354,29 +1354,29 @@ g12
 I00
 sg13
 (lp428
-I957
-aI774
+F1234.0
+aF171.0
 asg15
 (itiddlywiki
 Tiddler
 p429
 (dp430
 g19
-V<font color="e5d01d">Context</font>
+VOur intel suggests an enemy in your proximity has obtained a new type of weapon, one unknown to us. What little details we have are sparse.  It's a weak energy collector, but extracts from a large group of targets.\u000a\u000aTime to move.\u000a\u000aCover <<print either("10","13","16")>> paces and establish an <<encounter>> with <<print either("2","4","6")>> subjects.\u000a\u000aDo not overstep or under-encounter.  You will be <font color="#f36e21">Revealed</font>.\u000a\u000a<<questcomplete>>
 p431
 sg21
-Vcontext
+Vpace quest
 p432
 sg23
 g24
 ((I2014
 I1
+I26
+I1
+I32
 I25
-I16
-I28
-I49
-I5
-I25
+I6
+I26
 I0
 tp433
 (dp434
@@ -1384,7 +1384,7 @@ tp435
 Rp436
 sg29
 (lp437
-Vinline
+Vquest
 p438
 asg31
 g24
@@ -1392,8 +1392,8 @@ g24
 I1
 I25
 I16
-I28
-I39
+I34
+I25
 I5
 I25
 I0
@@ -1406,18 +1406,18 @@ g12
 I00
 sg13
 (lp444
-F1253.0
-aF196.0
+I1138
+aI770
 asg15
 (itiddlywiki
 Tiddler
 p445
 (dp446
 g19
-VOur intel suggests an enemy in your proximity has obtained a new type of weapon, one unknown to us. What little details we have are sparce.  It's a weak energy collector, but extracts from a large group of targets.\u000a\u000aTime to move.\u000a\u000aCover <<print either("10","13","16")>> paces and establish an <<encounter>> with <<print either("2","4","6")>> subjects.\u000a\u000aDo not overstep or under-encounter.  You will be <font color="#f36e21">Revealed</font>.\u000a\u000a<<questcomplete>>
+VDouble-tap when [[complete|quest proxy]]
 p447
 sg21
-Vpace quest
+Vquestcomplete
 p448
 sg23
 g24
@@ -1426,7 +1426,7 @@ I1
 I25
 I16
 I41
-I56
+I21
 I5
 I25
 I0
@@ -1436,7 +1436,7 @@ tp451
 Rp452
 sg29
 (lp453
-Vquest
+Vinline
 p454
 asg31
 g24
@@ -1444,8 +1444,8 @@ g24
 I1
 I25
 I16
-I34
-I25
+I41
+I7
 I5
 I25
 I0
@@ -1458,18 +1458,18 @@ g12
 I00
 sg13
 (lp460
-I1138
-aI770
+F346.0
+aF159.0
 asg15
 (itiddlywiki
 Tiddler
 p461
 (dp462
 g19
-VDouble-tap when [[complete|quest proxy]]
+VYou've requested to change your context.\u000a\u000aTap once if your [[train is arriving|on the train]].\u000aDouble-tap if you are on a train [[approaching your stop|waiting for the train]].\u000aSwipe up for [[stats]].
 p463
 sg21
-Vquestcomplete
+Vchange context
 p464
 sg23
 g24
@@ -1477,8 +1477,8 @@ g24
 I1
 I25
 I16
-I41
-I21
+I44
+I48
 I5
 I25
 I0
@@ -1488,7 +1488,7 @@ tp467
 Rp468
 sg29
 (lp469
-Vinline
+Vproxy
 p470
 asg31
 g24
@@ -1496,8 +1496,8 @@ g24
 I1
 I25
 I16
-I41
-I7
+I42
+I47
 I5
 I25
 I0
@@ -1510,71 +1510,19 @@ g12
 I00
 sg13
 (lp476
-F346.0
-aF159.0
+I197
+aI221
 asg15
 (itiddlywiki
 Tiddler
 p477
 (dp478
 g19
-VYou've requested to change your context.\u000a\u000aTap once if your [[train is arriving|on the train]].\u000aDouble-tap if you are on a train [[approaching your stop|waiting for the train]].\u000aSwipe up for [[stats]].
+VTotal Encounters\u000aTotal Breaks\u000aTotal Reveal Attempts\u000aTotal time
 p479
 sg21
-Vchange context
-p480
-sg23
-g24
-((I2014
-I1
-I25
-I16
-I44
-I48
-I5
-I25
-I0
-tp481
-(dp482
-tp483
-Rp484
-sg29
-(lp485
-Vproxy
-p486
-asg31
-g24
-((I2014
-I1
-I25
-I16
-I42
-I47
-I5
-I25
-I0
-tp487
-(dp488
-tp489
-Rp490
-sbsa(dp491
-g12
-I00
-sg13
-(lp492
-I209
-aI292
-asg15
-(itiddlywiki
-Tiddler
-p493
-(dp494
-g19
-VTotal Encounters\u000aTotal Breaks\u000aTotal Reveal Attempts\u000aTotal time
-p495
-sg21
 Vstats
-p496
+p480
 sg23
 g24
 ((I2014
@@ -1586,12 +1534,12 @@ I23
 I5
 I25
 I0
-tp497
-(dp498
-tp499
-Rp500
+tp481
+(dp482
+tp483
+Rp484
 sg29
-(lp501
+(lp485
 sg31
 g24
 ((I2014
@@ -1603,28 +1551,28 @@ I54
 I5
 I25
 I0
-tp502
-(dp503
-tp504
-Rp505
-sbsa(dp506
+tp486
+(dp487
+tp488
+Rp489
+sbsa(dp490
 g12
 I00
 sg13
-(lp507
+(lp491
 I1385
 aI27
 asg15
 (itiddlywiki
 Tiddler
-p508
-(dp509
+p492
+(dp493
 g19
 VWe did not get enough records from you in time.  We could not protect your identity any longer.  <<display revealed>>
-p510
+p494
 sg21
 Vtimed out quest
-p511
+p495
 sg23
 g24
 ((I2014
@@ -1636,16 +1584,16 @@ I9
 I5
 I25
 I0
-tp512
-(dp513
-tp514
-Rp515
+tp496
+(dp497
+tp498
+Rp499
 sg29
-(lp516
+(lp500
 Vquest
-p517
+p501
 aVcomplete
-p518
+p502
 asg31
 g24
 ((I2014
@@ -1657,66 +1605,14 @@ I22
 I5
 I25
 I0
-tp519
-(dp520
-tp521
-Rp522
-sbsa(dp523
-g12
-I00
-sg13
-(lp524
-F1308.0
-aF366.0
-asg15
-(itiddlywiki
-Tiddler
-p525
-(dp526
-g19
-V<<set saves=either("2","3","4","5","6","7","8")>>\u000aWe have conveined a council and it has been decided.  We need you to save <<print saves>> more souls.  You are the only operative currently in your locale.  This honor is now yours.\u000a\u000aEstablish and report <<print saves>> <<encounters>>.\u000a\u000a<<questcomplete>>
-p527
-sg21
-Vcount quest
-p528
-sg23
-g24
-((I2014
-I1
-I25
-I17
-I16
-I28
-I5
-I25
-I0
-tp529
-(dp530
-tp531
-Rp532
-sg29
-(lp533
-Vquest
-p534
-asg31
-g24
-((I2014
-I1
-I25
-I17
-I12
-I45
-I5
-I25
-I0
-tp535
-(dp536
-tp537
-Rp538
+tp503
+(dp504
+tp505
+Rp506
 sbsasS'scale'
-p539
+p507
 I1
 sS'snapping'
-p540
+p508
 I00
 ss.

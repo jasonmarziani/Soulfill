@@ -1,0 +1,13 @@
+PODS:
+  - Localytics-iOS-Client (2.21.0)
+  - TestFlightSDK (2.2.1-beta)
+
+DEPENDENCIES:
+  - Localytics-iOS-Client
+  - TestFlightSDK
+
+SPEC CHECKSUMS:
+  Localytics-iOS-Client: b3fa8102a426aab2421c13cd184d82c5c1a03e00
+  TestFlightSDK: 4249c2f70e621bcfbdebf019073169c8fe36be13
+
+COCOAPODS: 0.29.0
