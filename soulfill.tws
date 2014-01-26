@@ -20,7 +20,7 @@ p9
 (dp11
 S'selected'
 p12
-I00
+I01
 sS'pos'
 p13
 (lp14
@@ -34,7 +34,7 @@ p16
 (dp18
 S'text'
 p19
-VOur city sleeps with awful dreams.  Nightmares of toil and strife.  Come daylight, it treks with a heavy soul, burdened with tasks to come.  Each moment closer to another night\u2019s torment.  There is no warmth here.  Only we can see that now. \u000a\u000aAnd if we can see, we can save.\u000a\u000a[[continue|title screen]]
+VOur city sleeps with awful dreams.  Nightmares of toil and darkness.  Come daylight, it walks with a heavy soul, burdened with tasks to come.  Each moment closer to another night\u2019s torment.  There is no warmth here...\u000aWe can see that now...\u000aAnd if we can see...\u000awe can save.\u000a\u000aSwipe to continue.\u000a[[continue|title screen]]
 p20
 sS'title'
 p21
@@ -47,12 +47,12 @@ struct_time
 p24
 ((I2014
 I1
-I25
-I13
-I35
-I52
-I5
-I25
+I26
+I14
+I39
+I31
+I6
+I26
 I0
 tp25
 (dp26
@@ -370,7 +370,7 @@ Tiddler
 p123
 (dp124
 g19
-VThese souls will thank us one day.  Or perhaps not.  That will be determined by our success.  Our kind possess a great internal energy.  It's the stuff that brings vigor to the body, laughter to the lips, and passion to the heart. We transfer this energy through the eyes.  \u000a\u000aTo begin, make eye contact with someone nearby.\u000a\u000aWe call this an <<encounter>>.\u000a\u000aTap at any time to record an <<encounter>>.\u000a\u000aDouble-Tap when you [[complete your first encounter]].\u000a\u000a
+VThese souls will thank us one day.  Or perhaps not.  That will be determined by our success.  Our kind possess a great internal energy.  It's the stuff that brings vigor to the body, laughter to the lips, and passion to the heart. We transfer this energy through the eyes.  \u000a\u000aTo begin, make eye contact with someone nearby.\u000a\u000aWe call this an Encounter.\u000a\u000aDouble-Tap at any time to record an Encounter.\u000a\u000aRepeat.  Double tap at any time to record an Encounter.\u000a\u000aSwipe up to see how many Encounters you've recorded.\u000a\u000aWhen you are ready, swipe left to continue this journey.\u000a\u000a\u000aDouble-Tap when you [[complete your first encounter]].\u000a\u000a
 p125
 sg21
 Vstory start
@@ -380,9 +380,9 @@ g24
 ((I2014
 I1
 I26
-I1
-I35
-I13
+I14
+I21
+I34
 I6
 I26
 I0
@@ -422,7 +422,7 @@ Tiddler
 p139
 (dp140
 g19
-VOur gift is not an easy one to posses.  Those we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.\u000a\u000aEstablish 2 new <font color="#ab218e">Encounters</font>\u000a\u000aTap when [[complete|second encounter complete]].\u000a\u000a\u000a\u000a
+VOur gift is not an easy one to posses.  Those we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.\u000a\u000aEstablish 2 new Encounters.\u000a\u000aWhen you are ready, swipe left to continue this journey.\u000a\u000aTap when [[complete|second encounter complete]].\u000a\u000a\u000a\u000a
 p141
 sg21
 Vcomplete your first encounter
@@ -431,12 +431,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I15
 I26
-I38
-I5
-I25
+I14
+I22
+I19
+I6
+I26
 I0
 tp143
 (dp144
@@ -474,7 +474,7 @@ Tiddler
 p155
 (dp156
 g19
-VWith any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They meld their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presence.  You will know them.  When you establish an <font color="#ab218e">Encounter</font>, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.\u000a\u000aDo not establish an <font color="#ab218e">Encounter</font> with someone who is already looking at you.  <font color="#f36e21">This is called a Reveal</font>.\u000a\u000aIf you are fallen by our enemy, if you are <font color="#f36e21">Revealed</font>, you must swipe down.\u000a\u000a<!-- PERSIST DOWNWARD SWIPE AS ENDGAME SCENARIO -->\u000a\u000a[[continue|tutorial complete]]
+VWith any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They meld their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presence.  You will know them.  When you establish an Encounter, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.\u000a\u000aDo not establish an Encounter with someone who is already looking at you. This is called a Reveal.\u000a\u000aIf you are fallen by our enemy, if you are Revealed, you must swipe down.\u000a\u000a[[continue|tutorial complete]]
 p157
 sg21
 Vthird encounter complete
@@ -484,9 +484,9 @@ g24
 ((I2014
 I1
 I26
-I1
-I33
-I9
+I14
+I16
+I34
 I6
 I26
 I0
@@ -528,7 +528,7 @@ Tiddler
 p172
 (dp173
 g19
-VThe enemy is upon you.  You have been <font color="#f36e21">Revealed</font>, your powers taken, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.\u000a\u000a\u000a[[Game Over.|Start]]
+VThe enemy is upon you.  You have been Revealed, your powers taken, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.\u000a\u000a\u000a[[Game Over.|Start]]
 p174
 sg21
 Vrevealed
@@ -538,9 +538,9 @@ g24
 ((I2014
 I1
 I26
-I1
-I33
-I59
+I14
+I35
+I24
 I6
 I26
 I0
@@ -582,7 +582,7 @@ Tiddler
 p189
 (dp190
 g19
-VTake heed, have any of your subjects broken the <font color="#ab218e">Encounter</font>?  This you must observe.  If your subject looks away from you before you do, <font color="#f36e21">this is called a Break</font>.  A <font color="#f36e21">Break</font> must be recorded immediately.  These souls are left exposed.  When this occurs, we will conviene a tribunal and provide you with additional direction.\u000a\u000aRecord a <font color="#f36e21">Break</font> by swiping up.\u000a\u000aIt's time to save yet another.\u000a\u000aTap when [[complete|third encounter complete]].
+VTake heed, have any of your subjects broken the Encounter?  This you must observe.  If your subject looks away from you before you do, this is called a Break.  A Break should be remedied immediately.  These souls are left exposed.\u000a\u000aIt's time to save yet another.\u000a\u000aTap when [[complete|third encounter complete]].
 p191
 sg21
 Vsecond encounter complete
@@ -591,12 +591,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I15
 I26
-I50
-I5
-I25
+I14
+I15
+I42
+I6
+I26
 I0
 tp193
 (dp194
@@ -634,7 +634,7 @@ Tiddler
 p205
 (dp206
 g19
-VIf at any time you enter a train or exit a train, we must be made aware.  This is called <font color="e5d01d">Context</font>.  Your missions will depend on your <font color="e5d01d">Context</font>.\u000a\u000aSwipe left at any time to change your <font color="e5d01d">Context</font>.\u000a\u000a[[continue|quest proxy]]
+VYou now have all the tools available to you.  In the coming moments, we will relay to you your missions.  Push forward.  The night is dark and nears.\u000a\u000aWhen you complete a mission, swipe left to recieve your next assignment.\u000a\u000a\u000a[[continue|quest proxy]]
 p207
 sg21
 Vtutorial complete
@@ -643,12 +643,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I16
-I42
-I33
-I5
-I25
+I26
+I14
+I23
+I30
+I6
+I26
 I0
 tp209
 (dp210
@@ -738,7 +738,7 @@ Tiddler
 p237
 (dp238
 g19
-VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save.\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[(Test) Timeout|timed out quest]]
+VWe've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save the ones around you.\u000a\u000aComplete 3 encounters in 30 seconds.\u000a\u000aIf you fail, you must swipe down and be Revealed.\u000a\u000aBegin your countdown... now.\u000a\u000a\u000aComplete <<print either("2","3","4")>> <font color="#ab218e">Encounters</font> in <<print either("30","45","60")>> seconds.\u000a\u000a\u000aDouble-tap to [[complete|timed quest complete]].\u000a[[(Test) Timeout|timed out quest]]
 p239
 sg21
 Vtimed quest
@@ -747,12 +747,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I16
-I58
-I43
-I5
-I25
+I26
+I14
+I28
+I11
+I6
+I26
 I0
 tp241
 (dp242
@@ -790,7 +790,7 @@ Tiddler
 p253
 (dp254
 g19
-VWe have reason to believe you may have been comprimised.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will first <font color="#f36e21">Break</font> an encounter.  That is how you will know.  But beware, they will be quick to \u000a\u000aFind someone that <font color="#f36e21">Breaks</font> an <<encounter>> without a <<reveal>>.\u000a\u000aRecord your <<encounter>> progress.\u000a\u000a<<questcomplete>>\u000a\u000a\u000a
+VWe have reason to believe you may have been comprimised.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will Break an encounter with you.  That is how you will know.  But beware, they will be quick to recover and attempt a Reveal.  \u000a\u000aWhen you find the enemy, do not look again at this person for the rest of time.\u000a\u000aFind someone that <font color="#f36e21">Breaks</font> an <<encounter>> without a <<reveal>>.\u000a\u000aRecord your <<encounter>> progress.\u000a\u000a<<questcomplete>>\u000a\u000a\u000a
 p255
 sg21
 Vchallenge quest
@@ -799,12 +799,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I16
-I41
-I52
-I5
-I25
+I26
+I14
+I30
+I4
+I6
+I26
 I0
 tp257
 (dp258
@@ -998,7 +998,7 @@ Tiddler
 p317
 (dp318
 g19
-VThere is a soul that's exposed in your proximity.  It will not be long until an enemy makes contact.  You must perform a repeat <<encounter>> to safely guide this person from danger.\u000a\u000aCreate an <<encounter>>.  Then repeat the <<encounter>> with the same person.\u000a\u000a<<questcomplete>>
+VThere is a soul that's exposed in your proximity.  It will not be long until an enemy makes contact.  You must perform a repeat Encounter to safely guide this person from danger.\u000a\u000aCreate an encounter.  Then repeat the encounter with the same person.\u000a\u000a<<questcomplete>>
 p319
 sg21
 Vrepeat quest
@@ -1007,12 +1007,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I16
-I48
-I4
-I5
-I25
+I26
+I14
+I30
+I55
+I6
+I26
 I0
 tp321
 (dp322
@@ -1042,7 +1042,7 @@ g12
 I00
 sg13
 (lp332
-I361
+I365
 aI619
 asg15
 (itiddlywiki
@@ -1050,7 +1050,7 @@ Tiddler
 p333
 (dp334
 g19
-VYou only have seconds.  The <font color="#f36e21">Reveal</font> is not complete.  But you must move.  And they must not follow.\u000a\u000aTurn, move, go.  Do not create an <font color="#ab218e">Encounter</font> during your excape.\u000a\u000a<!-- SINGLE TAP / ENCOUNTER IS A LOSS -->\u000aDouble-tap to <<return>>
+VYou only have seconds.  The Reveal is not yet complete.  But you must move.  And they must not follow.\u000a\u000aTurn, move, go.  Do not create an Encounter during your excape.  If you do, you must swipe down.\u000a\u000a<!-- SINGLE TAP / ENCOUNTER IS A LOSS -->\u000aDouble-tap to <<return>>
 p335
 sg21
 Vreveal attempt
@@ -1059,12 +1059,12 @@ sg23
 g24
 ((I2014
 I1
-I25
-I16
-I4
-I35
-I5
-I25
+I26
+I14
+I34
+I58
+I6
+I26
 I0
 tp337
 (dp338
@@ -1102,7 +1102,7 @@ Tiddler
 p349
 (dp350
 g19
-VWe've detected an anomaly.  A wide open soul, hyper-exposed.  There is a chance this soul will start to consume proximity souls if the void regresses any further.  Help this being and save the others that surround.\u000a\u000aCreate an <<encounter>> and hold for as long as possible.\u000a\u000aTouch and hold device during the <<encounter>> to record.\u000a\u000a<<questcomplete>>
+VWe've detected an anomaly.  A wide open soul, hyper-exposed.  There is a chance this soul will start to consume proximity souls if the void regresses any further.  Help this being and save the others that surround.\u000a\u000aYour mission, create an encounter and hold for as long as possible.  Do not break.  Record an encounter for every second that you can hold on to this soul.\u000a\u000a\u000a<<questcomplete>>
 p351
 sg21
 Vhold quest
@@ -1112,9 +1112,9 @@ g24
 ((I2014
 I1
 I26
-I1
-I33
-I34
+I14
+I32
+I40
 I6
 I26
 I0
@@ -1362,7 +1362,7 @@ Tiddler
 p429
 (dp430
 g19
-VOur intel suggests an enemy in your proximity has obtained a new type of weapon, one unknown to us. What little details we have are sparse.  It's a weak energy collector, but extracts from a large group of targets.\u000a\u000aTime to move.\u000a\u000aCover <<print either("10","13","16")>> paces and establish an <<encounter>> with <<print either("2","4","6")>> subjects.\u000a\u000aDo not overstep or under-encounter.  You will be <font color="#f36e21">Revealed</font>.\u000a\u000a<<questcomplete>>
+VOur intel suggests an enemy in your proximity has obtained a new type of weapon, one unknown to us. What little details we have are sparse.  It's a weak energy collector, but extracts from a large group of targets.\u000a\u000aTime to move.\u000a\u000aCover 10 paces and establish an encounter with 5 subjects.\u000a\u000aDo not overstep or under encounter.  If you do, swipe down, as you will be revealed.\u000a\u000aCover <<print either("10","13","16")>> paces and establish an <<encounter>> with <<print either("2","4","6")>> subjects.\u000a\u000aDo not overstep or under-encounter.  You will be <font color="#f36e21">Revealed</font>.\u000a\u000a<<questcomplete>>
 p431
 sg21
 Vpace quest
@@ -1372,9 +1372,9 @@ g24
 ((I2014
 I1
 I26
-I1
-I32
-I25
+I14
+I33
+I50
 I6
 I26
 I0

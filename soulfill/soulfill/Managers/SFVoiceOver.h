@@ -35,11 +35,11 @@ typedef void (^SFVoiceOverStateHandler)(SFVoiceOver *manager, NSError *error);
 @property (nonatomic) float postDelay;
 @property (nonatomic, strong)  AVSpeechSynthesisVoice *voice;
 
-// PRIVATE
+@property (nonatomic) BOOL isSpeaking; // CHECK FOR VC'S TO BLOCK PROGRESS WHILE READING
 
 // METHODS
--(void)play:(NSString*)copy withBlock:(SFVoiceOverStateHandler)handler;
--(void)say:(NSString*)string withDelay:(float)delay andBlock:(SFVoiceOverStateHandler)handler;
+-(void)say:(NSString*)string;
+-(void)say:(NSString*)string withDelay:(float)delay;
 -(void)stop;
 
 @end

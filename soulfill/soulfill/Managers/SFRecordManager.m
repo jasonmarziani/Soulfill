@@ -12,7 +12,6 @@
 
 @synthesize score;
 
-
 static SFRecordManager *manager = nil;
 
 + (SFRecordManager *)shared
@@ -20,6 +19,7 @@ static SFRecordManager *manager = nil;
     @synchronized(self) {
         if (!manager){
             manager = [[SFRecordManager alloc] init];
+            manager.score = 0;
         }
     }
     return manager;

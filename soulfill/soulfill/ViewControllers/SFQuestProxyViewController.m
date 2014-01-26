@@ -7,32 +7,30 @@
 //
 
 #import "SFQuestProxyViewController.h"
+#import "SFMacros.h"
 
 @interface SFQuestProxyViewController ()
+
+@property (nonatomic, strong) NSArray *questArray;
 
 @end
 
 @implementation SFQuestProxyViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.questArray = [self.quests componentsSeparatedByString:@","];
+    
+    if([self.questArray count] <= 0) return;
+    
+    // ANY TIME THIS IN INITIALIZED, IT PUSHES TO A RANDOM UIVIEWCONTROLLER
+    float index = [SFMacros randomInRange:[self.questArray count] andLow:0];
+    NSString *target = (NSString*)[self.questArray objectAtIndex:index];
+    NSLog(@"TARGET: %@", target);
+    [self gotoVOVC:target];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

@@ -7,25 +7,71 @@
 //
 
 #import "SFBaseView.h"
+#import "SFRecordManager.h"
 
 @implementation SFBaseView
 
-- (id)initWithFrame:(CGRect)frame
+@synthesize textfield;
+@synthesize text = _text;
+@synthesize helpView;
+
+@synthesize scoreLabel;
+@synthesize swipePrompt;
+
+-(void)layoutSubviews
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+    [super layoutSubviews];
+    
+    // ADD IMAGE IF EXISTS
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    rect.size.height -= 20;
+    [textfield setFrame:rect];
+    helpView.hidden = YES;
+    
+    scoreLabel.text = [NSString stringWithFormat:@"%i",[SFRecordManager shared].score];
+    
+    swipePrompt.hidden = YES;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+-(void)setText:(NSString *)text
 {
-    // Drawing code
+    _text = text;
+    //textfield.selectable = YES;
+    //textfield.text = _text;
+    //textfield.selectable = NO;
+    NSLog(@"%@",_text);
 }
-*/
+
+-(void)showHelpView
+{
+    if(helpView.hidden){
+        helpView.alpha = 0;
+        helpView.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            helpView.alpha = 1;
+        }];
+    }else{
+        [self hideHelpView];
+    }
+}
+
+-(void)hideHelpView
+{
+    [UIView animateWithDuration:0.3 animations:^{
+        helpView.alpha = 0;
+    } completion: ^(BOOL finished) {//creates a variable (BOOL) called "finished" that is set to *YES* when animation IS completed.
+        helpView.hidden = finished;//if animation is finished ("finished" == *YES*), then hidden = "finished" ... (aka hidden = *YES*)
+    }];
+}
+
+-(void)showSwipePrompt
+{
+    swipePrompt.alpha = 0;
+    swipePrompt.hidden = NO;
+    [UIView animateWithDuration:0.3 animations:^{
+        swipePrompt.alpha = 1;
+    }];
+}
+
 
 @end

@@ -17,4 +17,6 @@
 +(NSString*)context;
 +(NSString*)questcomplete;
 
++(float)randomInRange:(float)high andLow:(float)low;
+
 @end

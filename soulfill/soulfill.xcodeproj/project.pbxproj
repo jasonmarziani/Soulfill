@@ -18,7 +18,6 @@
 		E124AA9C1894BDE300A28B67 /* SFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E124AA9B1894BDE300A28B67 /* SFSettingsViewController.m */; };
 		E124AAA21894C65400A28B67 /* SFRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E124AAA11894C65400A28B67 /* SFRecordManager.m */; };
 		E124AAAC1894D5EA00A28B67 /* UIViewController+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = E124AAAB1894D5EA00A28B67 /* UIViewController+Categories.m */; };
-		E124AAB01894DCB200A28B67 /* SFSTutorialStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E124AAAF1894DCB200A28B67 /* SFSTutorialStartViewController.m */; };
 		E1AF10671894AA6F000A9293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AF10661894AA6F000A9293 /* Foundation.framework */; };
 		E1AF10691894AA6F000A9293 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AF10681894AA6F000A9293 /* CoreGraphics.framework */; };
 		E1AF106B1894AA6F000A9293 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AF106A1894AA6F000A9293 /* UIKit.framework */; };
@@ -26,7 +25,6 @@
 		E1AF10731894AA6F000A9293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF10721894AA6F000A9293 /* main.m */; };
 		E1AF10771894AA6F000A9293 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF10761894AA6F000A9293 /* SFAppDelegate.m */; };
 		E1AF107A1894AA6F000A9293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AF10781894AA6F000A9293 /* Main.storyboard */; };
-		E1AF107D1894AA6F000A9293 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF107C1894AA6F000A9293 /* SFViewController.m */; };
 		E1AF107F1894AA6F000A9293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AF107E1894AA6F000A9293 /* Images.xcassets */; };
 		E1AF10861894AA6F000A9293 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AF10851894AA6F000A9293 /* XCTest.framework */; };
 		E1AF10871894AA6F000A9293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AF10661894AA6F000A9293 /* Foundation.framework */; };
@@ -37,6 +35,19 @@
 		E1B4DDF31894F1B4005565A6 /* SFQuestProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDF21894F1B4005565A6 /* SFQuestProxyViewController.m */; };
 		E1B4DDF61894F1D7005565A6 /* SFQuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDF51894F1D7005565A6 /* SFQuestViewController.m */; };
 		E1B4DDF91894F22F005565A6 /* SFMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDF81894F22F005565A6 /* SFMacros.m */; };
+		E1B4DDFC18956194005565A6 /* SFSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDFB18956194005565A6 /* SFSettingsManager.m */; };
+		E1B4DDFE18956412005565A6 /* SFStoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DDFD18956412005565A6 /* SFStoryView.xib */; };
+		E1B4DE0A18957400005565A6 /* Swipe_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0018957400005565A6 /* Swipe_Up.png */; };
+		E1B4DE0B18957400005565A6 /* Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0118957400005565A6 /* Swipe_Right.png */; };
+		E1B4DE0C18957400005565A6 /* Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0218957400005565A6 /* Swipe_Left.png */; };
+		E1B4DE0D18957400005565A6 /* Swipe_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0318957400005565A6 /* Swipe_Down.png */; };
+		E1B4DE0E18957400005565A6 /* Single_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0418957400005565A6 /* Single_Tap.png */; };
+		E1B4DE0F18957400005565A6 /* Hold_Timer.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0518957400005565A6 /* Hold_Timer.png */; };
+		E1B4DE1018957400005565A6 /* Double_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0618957400005565A6 /* Double_Tap.png */; };
+		E1B4DE1118957400005565A6 /* 2x_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0718957400005565A6 /* 2x_Tap.png */; };
+		E1B4DE1218957400005565A6 /* 2x_Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */; };
+		E1B4DE1318957400005565A6 /* 2x_Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */; };
+		E1B4DE1518957528005565A6 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE1418957528005565A6 /* headphones.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +80,6 @@
 		E124AAA11894C65400A28B67 /* SFRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFRecordManager.m; path = Managers/SFRecordManager.m; sourceTree = "<group>"; };
 		E124AAAA1894D5EA00A28B67 /* UIViewController+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Categories.h"; path = "Categories/UIViewController+Categories.h"; sourceTree = "<group>"; };
 		E124AAAB1894D5EA00A28B67 /* UIViewController+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Categories.m"; path = "Categories/UIViewController+Categories.m"; sourceTree = "<group>"; };
-		E124AAAE1894DCB200A28B67 /* SFSTutorialStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSTutorialStartViewController.h; path = StoryController/SFSTutorialStartViewController.h; sourceTree = "<group>"; };
-		E124AAAF1894DCB200A28B67 /* SFSTutorialStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSTutorialStartViewController.m; path = StoryController/SFSTutorialStartViewController.m; sourceTree = "<group>"; };
 		E1AF10631894AA6F000A9293 /* soulfill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soulfill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AF10661894AA6F000A9293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1AF10681894AA6F000A9293 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,8 +91,6 @@
 		E1AF10751894AA6F000A9293 /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
 		E1AF10761894AA6F000A9293 /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
 		E1AF10791894AA6F000A9293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E1AF107B1894AA6F000A9293 /* SFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
-		E1AF107C1894AA6F000A9293 /* SFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
 		E1AF107E1894AA6F000A9293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E1AF10841894AA6F000A9293 /* soulfillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soulfillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AF10851894AA6F000A9293 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -98,6 +105,20 @@
 		E1B4DDF51894F1D7005565A6 /* SFQuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFQuestViewController.m; path = ViewControllers/SFQuestViewController.m; sourceTree = "<group>"; };
 		E1B4DDF71894F22F005565A6 /* SFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMacros.h; sourceTree = "<group>"; };
 		E1B4DDF81894F22F005565A6 /* SFMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMacros.m; sourceTree = "<group>"; };
+		E1B4DDFA18956194005565A6 /* SFSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSettingsManager.h; path = Managers/SFSettingsManager.h; sourceTree = "<group>"; };
+		E1B4DDFB18956194005565A6 /* SFSettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSettingsManager.m; path = Managers/SFSettingsManager.m; sourceTree = "<group>"; };
+		E1B4DDFD18956412005565A6 /* SFStoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SFStoryView.xib; path = Views/SFStoryView.xib; sourceTree = "<group>"; };
+		E1B4DE0018957400005565A6 /* Swipe_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Up.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Up.png"; sourceTree = "<group>"; };
+		E1B4DE0118957400005565A6 /* Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Right.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Right.png"; sourceTree = "<group>"; };
+		E1B4DE0218957400005565A6 /* Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Left.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Left.png"; sourceTree = "<group>"; };
+		E1B4DE0318957400005565A6 /* Swipe_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Down.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Down.png"; sourceTree = "<group>"; };
+		E1B4DE0418957400005565A6 /* Single_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Single_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Single_Tap.png"; sourceTree = "<group>"; };
+		E1B4DE0518957400005565A6 /* Hold_Timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hold_Timer.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Hold_Timer.png"; sourceTree = "<group>"; };
+		E1B4DE0618957400005565A6 /* Double_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Double_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Double_Tap.png"; sourceTree = "<group>"; };
+		E1B4DE0718957400005565A6 /* 2x_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Tap.png"; sourceTree = "<group>"; };
+		E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Right.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Swipe_Right.png"; sourceTree = "<group>"; };
+		E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Left.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Swipe_Left.png"; sourceTree = "<group>"; };
+		E1B4DE1418957528005565A6 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headphones.png; path = ../../../../Downloads/headphones.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +151,14 @@
 		E124AA841894AB6100A28B67 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				E1B4DDF71894F22F005565A6 /* SFMacros.h */,
+				E1B4DDF81894F22F005565A6 /* SFMacros.m */,
 				E124AA921894B29500A28B67 /* SFVoiceOver.h */,
 				E124AA931894B29500A28B67 /* SFVoiceOver.m */,
 				E124AAA01894C65400A28B67 /* SFRecordManager.h */,
 				E124AAA11894C65400A28B67 /* SFRecordManager.m */,
+				E1B4DDFA18956194005565A6 /* SFSettingsManager.h */,
+				E1B4DDFB18956194005565A6 /* SFSettingsManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -143,6 +168,7 @@
 			children = (
 				E124AA8C1894B23F00A28B67 /* SFBaseView.h */,
 				E124AA8D1894B23F00A28B67 /* SFBaseView.m */,
+				E1B4DDFD18956412005565A6 /* SFStoryView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -169,6 +195,17 @@
 		E124AA871894AB7E00A28B67 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B4DE1418957528005565A6 /* headphones.png */,
+				E1B4DE0018957400005565A6 /* Swipe_Up.png */,
+				E1B4DE0118957400005565A6 /* Swipe_Right.png */,
+				E1B4DE0218957400005565A6 /* Swipe_Left.png */,
+				E1B4DE0318957400005565A6 /* Swipe_Down.png */,
+				E1B4DE0418957400005565A6 /* Single_Tap.png */,
+				E1B4DE0518957400005565A6 /* Hold_Timer.png */,
+				E1B4DE0618957400005565A6 /* Double_Tap.png */,
+				E1B4DE0718957400005565A6 /* 2x_Tap.png */,
+				E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */,
+				E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */,
 				E124AA951894BC2100A28B67 /* logo-600.png */,
 			);
 			name = Resources;
@@ -186,8 +223,6 @@
 		E124AAAD1894DC6900A28B67 /* StoryControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E124AAAE1894DCB200A28B67 /* SFSTutorialStartViewController.h */,
-				E124AAAF1894DCB200A28B67 /* SFSTutorialStartViewController.m */,
 			);
 			name = StoryControllers;
 			sourceTree = "<group>";
@@ -238,10 +273,6 @@
 				E1AF10751894AA6F000A9293 /* SFAppDelegate.h */,
 				E1AF10761894AA6F000A9293 /* SFAppDelegate.m */,
 				E1AF10781894AA6F000A9293 /* Main.storyboard */,
-				E1AF107B1894AA6F000A9293 /* SFViewController.h */,
-				E1AF107C1894AA6F000A9293 /* SFViewController.m */,
-				E1B4DDF71894F22F005565A6 /* SFMacros.h */,
-				E1B4DDF81894F22F005565A6 /* SFMacros.m */,
 				E1AF107E1894AA6F000A9293 /* Images.xcassets */,
 				E1AF106D1894AA6F000A9293 /* Supporting Files */,
 			);
@@ -356,10 +387,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B4DE1518957528005565A6 /* headphones.png in Resources */,
+				E1B4DE1018957400005565A6 /* Double_Tap.png in Resources */,
+				E1B4DE1218957400005565A6 /* 2x_Swipe_Right.png in Resources */,
 				E1AF107F1894AA6F000A9293 /* Images.xcassets in Resources */,
+				E1B4DE0A18957400005565A6 /* Swipe_Up.png in Resources */,
+				E1B4DE0B18957400005565A6 /* Swipe_Right.png in Resources */,
+				E1B4DE0C18957400005565A6 /* Swipe_Left.png in Resources */,
 				E1AF10711894AA6F000A9293 /* InfoPlist.strings in Resources */,
+				E1B4DE0F18957400005565A6 /* Hold_Timer.png in Resources */,
+				E1B4DE1118957400005565A6 /* 2x_Tap.png in Resources */,
+				E1B4DDFE18956412005565A6 /* SFStoryView.xib in Resources */,
 				E1AF107A1894AA6F000A9293 /* Main.storyboard in Resources */,
+				E1B4DE0E18957400005565A6 /* Single_Tap.png in Resources */,
+				E1B4DE1318957400005565A6 /* 2x_Swipe_Left.png in Resources */,
 				E124AA961894BC2100A28B67 /* logo-600.png in Resources */,
+				E1B4DE0D18957400005565A6 /* Swipe_Down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +457,9 @@
 				E124AAA21894C65400A28B67 /* SFRecordManager.m in Sources */,
 				E1AF10731894AA6F000A9293 /* main.m in Sources */,
 				E124AA941894B29500A28B67 /* SFVoiceOver.m in Sources */,
-				E124AAB01894DCB200A28B67 /* SFSTutorialStartViewController.m in Sources */,
+				E1B4DDFC18956194005565A6 /* SFSettingsManager.m in Sources */,
 				E1B4DDF61894F1D7005565A6 /* SFQuestViewController.m in Sources */,
 				E1B4DDF01894EB53005565A6 /* SFVOViewController.m in Sources */,
-				E1AF107D1894AA6F000A9293 /* SFViewController.m in Sources */,
 				E124AA8E1894B23F00A28B67 /* SFBaseView.m in Sources */,
 				E124AA991894BDB100A28B67 /* SFMainMenuViewController.m in Sources */,
 				E1AF10771894AA6F000A9293 /* SFAppDelegate.m in Sources */,

@@ -17,7 +17,7 @@
 @synthesize preDelay;
 @synthesize postDelay;
 @synthesize voice;
-
+@synthesize isSpeaking;
 
 
 // SINGLETON INTERFACE
@@ -38,18 +38,20 @@ static SFVoiceOver *manager = nil;
 
 -(void)defaults
 {
+    // PULL THESE FROM SETTINGS MANAGER
     self.volume = 0.8f;
     self.pitch = 1.1f;
     self.rate = 0.15f;
     self.preDelay = 0;
     self.postDelay = 0;
     self.voice = [AVSpeechSynthesisVoice voiceWithLanguage: @"en-US"];
+    self.isSpeaking = false;
 }
 
 
--(void)play:(NSString*)copy withBlock:(SFVoiceOverStateHandler)handler
+-(void)say:(NSString*)string
 {
-    AVSpeechUtterance *utt = [AVSpeechUtterance speechUtteranceWithString:copy];
+    AVSpeechUtterance *utt = [AVSpeechUtterance speechUtteranceWithString:string];
     utt.volume = self.volume;
     utt.pitchMultiplier = self.pitch;
     utt.rate = self.rate;
@@ -58,10 +60,11 @@ static SFVoiceOver *manager = nil;
     [self.speechSynthesizer speakUtterance:utt];
 }
 
--(void)say:(NSString*)string withDelay:(float)delay andBlock:(SFVoiceOverStateHandler)handler
+-(void)say:(NSString*)string withDelay:(float)delay
 {
     self.preDelay = delay;
-    [self play:string withBlock:handler];
+    self.isSpeaking = YES;
+    [self say:string];
 }
 
 -(void)stop
@@ -74,11 +77,13 @@ static SFVoiceOver *manager = nil;
 -(void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
     NSLog(@"SPEECH COMPLETE");
+    self.isSpeaking = NO;
 }
 
 -(void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance
 {
     NSLog(@"CANCELED SPEECH");
+    self.isSpeaking = NO;
 }
 
 @end

@@ -10,4 +10,5 @@
 
 @interface SFQuestProxyViewController : SFVOViewController
 
+@property (nonatomic, strong) NSString *quests;
 @end

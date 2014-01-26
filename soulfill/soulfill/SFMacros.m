@@ -35,4 +35,14 @@
     return @"Double-tap when [[complete|quest proxy]]";
 }
 
++(float)randomInRange:(float)high andLow:(float)low
+{
+    return (((float)arc4random()/0x100000000)*(high-low)+low);
+}
+
++(NSString*)parseStringForIncludes:(NSString*)str
+{
+    return str;
+}
+
 @end
