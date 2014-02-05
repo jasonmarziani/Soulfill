@@ -7,11 +7,20 @@
 //
 
 #import "SFBaseViewController.h"
+#import "SFBaseView.h"
 
 @interface SFVOViewController : SFBaseViewController
 
+@property (nonatomic, strong) SFBaseView *baseView;
+
+// SPEAKING
 @property (nonatomic, strong) NSString *speak;
 @property (nonatomic) float delay;
+
+// BOOLS
+@property (nonatomic) BOOL dontScore;
+@property (nonatomic) BOOL muteSwipe;
+@property (nonatomic) BOOL hideHelp;
 
 // GESTURES
 @property (nonatomic, strong) NSString *tapto;

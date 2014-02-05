@@ -23,4 +23,9 @@
 // PLAYTHROUGH SEETINGS
 @property (nonatomic) BOOL tutorialsOn;
 
+
+// PROXIES
+@property(nonatomic, strong) NSArray *quests;
+@property(nonatomic, strong) NSArray *reveals;
+
 @end

@@ -57,7 +57,7 @@ static SFVoiceOver *manager = nil;
     utt.rate = self.rate;
     utt.preUtteranceDelay = self.preDelay;
     utt.postUtteranceDelay = self.postDelay;
-    [self.speechSynthesizer speakUtterance:utt];
+    [speechSynthesizer speakUtterance:utt];
 }
 
 -(void)say:(NSString*)string withDelay:(float)delay
@@ -70,7 +70,9 @@ static SFVoiceOver *manager = nil;
 -(void)stop
 {
     // STOP PLAYING VO
-    [self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+    //[self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryWord];
+    //[self.speechSynthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+    self.isSpeaking = NO;
 }
 
 

@@ -16,6 +16,9 @@
 @synthesize showText;
 @synthesize tutorialsOn;
 
+@synthesize quests;
+@synthesize reveals;
+
 
 // SINGLETON INTERFACE
 static SFSettingsManager *manager = nil;
@@ -40,6 +43,12 @@ static SFSettingsManager *manager = nil;
     
     self.showText = YES;
     self.tutorialsOn = YES;
+    
+    NSString *questStr = @"timedquest,challengequest,repeatquest,holdquest,pacequest";
+    self.quests = [questStr componentsSeparatedByString:@","];
+    NSString *revealStr = @"revealed,revealattempt";
+    self.reveals = [revealStr componentsSeparatedByString:@","];
+
 }
 
 @end

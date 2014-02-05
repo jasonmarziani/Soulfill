@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dhA-Jl-906">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AXs-K5-uDt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Titles View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="firstscreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="SFVOViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstscreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="SFTitlesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MeJ-Uh-gQG"/>
                         <viewControllerLayoutGuide type="bottom" id="Exz-cK-58S"/>
@@ -17,55 +17,58 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-600.png" translatesAutoresizingMaskIntoConstraints="NO" id="kcT-If-X0g">
-                                <rect key="frame" x="25" y="72" width="271" height="82"/>
+                                <rect key="frame" x="25" y="182" width="271" height="82"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="presents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-sp-9TD">
-                                <rect key="frame" x="100" y="162" width="121" height="21"/>
+                                <rect key="frame" x="100" y="272" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a 2014 global game jam submission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-pA-Ifh">
-                                <rect key="frame" x="20" y="239" width="285" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-FU-aw4">
+                                <rect key="frame" x="270" y="510" width="41" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soulfill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usn-71-bbR">
-                                <rect key="frame" x="60" y="191" width="201" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="45"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headphones.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q75-kp-Pnk">
-                                <rect key="frame" x="10" y="255" width="300" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-FU-aw4">
-                                <rect key="frame" x="280" y="430" width="41" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="hdr-cp-hlF"/>
+                                    <constraint firstAttribute="height" constant="38" id="nOW-aw-sMr"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Auz-FU-aw4" secondAttribute="trailing" constant="10" id="GxO-RY-l4u"/>
+                            <constraint firstAttribute="bottom" secondItem="Auz-FU-aw4" secondAttribute="bottom" constant="20" id="Phf-qW-QIF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7e6-ce-Xni"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="description"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="secondscreen"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dontScore" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="muteSwipe" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideHelp" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="speak" value="Come in.  Are you there?  We thought we lost you.  We thought you revealed."/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fadeDelay">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="promptView" destination="Auz-FU-aw4" id="jo8-dc-Xa4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="-242"/>
+            <point key="canvasLocation" x="-950" y="-242"/>
         </scene>
-        <!--View Controller-->
+        <!--Titles View Controller-->
         <scene sceneID="Eto-5j-m0Z">
             <objects>
-                <viewController storyboardIdentifier="controls" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fbt-Rl-leO" customClass="SFVOViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="controls" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fbt-Rl-leO" customClass="SFTitlesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r8l-I1-HSA"/>
                         <viewControllerLayoutGuide type="bottom" id="Wbp-85-cu9"/>
@@ -82,61 +85,61 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="double tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-Gf-xtG">
-                                <rect key="frame" x="110" y="110" width="130" height="21"/>
+                                <rect key="frame" x="95" y="109" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="record an Encounter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-9F-IMq">
-                                <rect key="frame" x="110" y="133" width="169" height="21"/>
+                                <rect key="frame" x="95" y="131" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Double_Tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="rZd-sl-fSH">
-                                <rect key="frame" x="42" y="104" width="60" height="57"/>
+                                <rect key="frame" x="28" y="104" width="60" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe down" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-4m-G6n">
-                                <rect key="frame" x="110" y="175" width="130" height="21"/>
+                                <rect key="frame" x="95" y="174" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="record an Reveal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua0-e0-UXt">
-                                <rect key="frame" x="110" y="198" width="169" height="21"/>
+                                <rect key="frame" x="95" y="196" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Down.png" translatesAutoresizingMaskIntoConstraints="NO" id="hfW-DV-S2c">
-                                <rect key="frame" x="42" y="169" width="60" height="57"/>
+                                <rect key="frame" x="28" y="169" width="60" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRT-Ap-gpE">
-                                <rect key="frame" x="114" y="307" width="130" height="21"/>
+                                <rect key="frame" x="95" y="306" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="toggle controls reminder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5X-cm-hJw">
-                                <rect key="frame" x="114" y="330" width="202" height="21"/>
+                                <rect key="frame" x="95" y="328" width="202" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="YPP-Gu-m3P">
-                                <rect key="frame" x="46" y="301" width="60" height="57"/>
+                                <rect key="frame" x="32" y="306" width="60" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="single tap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-tB-HKs">
-                                <rect key="frame" x="118" y="380" width="130" height="21"/>
+                                <rect key="frame" x="95" y="374" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.31372549020000001" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
@@ -144,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="does nothing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjT-5y-VE9">
-                                <rect key="frame" x="118" y="403" width="202" height="21"/>
+                                <rect key="frame" x="95" y="397" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.31372549020000001" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
@@ -152,43 +155,61 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Single_Tap.png" translatesAutoresizingMaskIntoConstraints="NO" id="LFy-ly-6Dz">
-                                <rect key="frame" x="50" y="374" width="60" height="57"/>
+                                <rect key="frame" x="32" y="371" width="60" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swipe left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1d-pI-9tn">
-                                <rect key="frame" x="110" y="242" width="130" height="21"/>
+                                <rect key="frame" x="95" y="241" width="130" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="continue / navigation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-s5-Xfl">
-                                <rect key="frame" x="110" y="265" width="173" height="21"/>
+                                <rect key="frame" x="95" y="263" width="173" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="G0w-no-d5I">
-                                <rect key="frame" x="46" y="236" width="60" height="57"/>
+                                <rect key="frame" x="32" y="235" width="60" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tbn-TC-9R6">
-                                <rect key="frame" x="279" y="426" width="41" height="38"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="e4b-Qv-aNT">
+                                <rect key="frame" x="270" y="510" width="41" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="2br-33-b4d"/>
+                                    <constraint firstAttribute="width" constant="41" id="c1g-6r-KRK"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e4b-Qv-aNT" secondAttribute="trailing" constant="9" id="FfF-iP-izR"/>
+                            <constraint firstAttribute="bottom" secondItem="e4b-Qv-aNT" secondAttribute="bottom" constant="20" id="xCD-zf-pCq"/>
+                        </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="rightswipeto" value="description"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="start"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorialstart"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdgfasdf"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dontScore" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideHelp" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="speak">
+                            <string key="value">You must push forward.  Guide them through the daylight.  The night is dark and nears, and this night may be the darkest of them all.</string>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fadeDelay">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhb-cv-ubM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="-242"/>
+            <point key="canvasLocation" x="620" y="-242"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RAY-us-Kgd">
@@ -198,75 +219,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="o08-Sc-TVu"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="RgR-sg-JRu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pnr-7x-e0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1046" y="-234"/>
-        </scene>
-        <!--View Controller - intro-->
-        <scene sceneID="nTC-5i-pbT">
-            <objects>
-                <viewController storyboardIdentifier="start" title="intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dhA-Jl-906" customClass="SFVOViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xtI-Ko-5dO"/>
-                        <viewControllerLayoutGuide type="bottom" id="dtF-Fe-Kya"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7CX-Ao-AQD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gDE-KV-BHe"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">Our city sleeps with awful dreams.  Nightmares of toil and darkness.  Come daylight, it walks with a heavy soul, burdened with tasks to come.  Each moment closer to another night’s torment.  There is no warmth here...
-We can see that now...
-And if we can see...
-we can save.</string>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="titlescreen"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="79D-hC-ZEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="732" y="-763"/>
-        </scene>
-        <!--View Controller - title-->
-        <scene sceneID="L6J-8l-qsz">
-            <objects>
-                <viewController storyboardIdentifier="titlescreen" title="title" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y2V-G2-BGz" customClass="SFVOViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rE4-XF-CLq"/>
-                        <viewControllerLayoutGuide type="bottom" id="TBJ-H9-xeB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O15-Vr-rJw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">Soulfill
-
-An audio game.
-
-Hold your iPhone in your hand with headphones on.
-
-Play this on the subway.</string>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.29999999999999999"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorialstart"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hvF-BM-eF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1147" y="-763"/>
+            <point key="canvasLocation" x="-1417" y="-242"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zvb-nZ-ckI">
@@ -298,7 +256,7 @@ Swipe up to see how many Encounters you've recorded.
 When you are ready, swipe left to continue this journey.</mutableString>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorial1"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
@@ -306,28 +264,7 @@ When you are ready, swipe left to continue this journey.</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1E-mT-oaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613" y="-1458"/>
-        </scene>
-        <!--Quest Proxy View Controller-->
-        <scene sceneID="Sfs-NT-NTg">
-            <objects>
-                <viewController storyboardIdentifier="questproxy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IQb-lA-u3q" customClass="SFQuestProxyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yAT-dV-jy7"/>
-                        <viewControllerLayoutGuide type="bottom" id="kem-ze-9du"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ICU-tb-oq7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="quests" value="timedquest,challengequest,repeatquest,holdquest,pacequest"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gGm-02-pW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1653" y="-503"/>
+            <point key="canvasLocation" x="1365" y="-578"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rN1-WT-Ajm">
@@ -344,7 +281,7 @@ When you are ready, swipe left to continue this journey.</mutableString>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">Our gift is not an easy one to posses.  Those we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.
+                            <string key="value">Our gift is not an easy one to own.  The ones we wish to help do not realize their need.  They are instinctively resistant.  Yet we must persist.  We are their stewards in the day to help them through the night.
 
 Establish 2 new Encounters.
 
@@ -352,11 +289,14 @@ When you are ready, swipe left to continue this journey.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorial2"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5V-8M-qwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="-1458"/>
+            <point key="canvasLocation" x="1817" y="-578"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m1N-9G-6ra">
@@ -375,17 +315,21 @@ When you are ready, swipe left to continue this journey.</string>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
                             <string key="value">Take heed, have any of your subjects broken the Encounter?  This you must observe.  If your subject looks away from you before you do, this is called a Break.  A Break should be remedied immediately.  These souls are left exposed.
 
-It's time to save yet another.</string>
+It's time to save yet another.  Make eye contact.
+
+Double tap to record the encounter.
+
+When you are ready, swipe left to continue this journey.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.29999999999999999"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorial3"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nc-26-dbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2509" y="-1459"/>
+            <point key="canvasLocation" x="2261" y="-579"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I8A-hk-Ylq">
@@ -402,21 +346,25 @@ It's time to save yet another.</string>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <mutableString key="value">With any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They meld their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presence.  You will know them.  When you establish an Encounter, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.
+                            <mutableString key="value">With any great power comes those who wish to possess it.  Our enemy has discovered a way to take our power.  They shift their beastly shape into the form of the public, blending in plain view.  They watch for us, eyes open and aware of our presence.  You will know them.  When you establish an Encounter, they will have already been looking at you.  This is how they take, through the same method with which we intend to save.
 
 Do not establish an Encounter with someone who is already looking at you. This is called a Reveal.
 
-If you are fallen by our enemy, if you are Revealed, you must swipe down.</mutableString>
+If you are fallen by our enemy, if you are Revealed, you must swipe down.
+
+Repeat, if you make eye contact with someone already looking at you, this is a Reveal.  You must swipe down.
+
+When you are ready, swipe left to continue this journey.</mutableString>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.29999999999999999"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="tutorial4"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWj-Sw-h7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2981" y="-1458"/>
+            <point key="canvasLocation" x="2733" y="-578"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xRb-l7-XO2">
@@ -438,14 +386,14 @@ If you are fallen by our enemy, if you are Revealed, you must swipe down.</mutab
 When you complete a mission, swipe left to recieve your next assignment.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <integer key="value" value="0"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDn-iT-joJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445" y="-1456"/>
+            <point key="canvasLocation" x="3197" y="-576"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IN3-yY-acK">
@@ -460,6 +408,7 @@ When you complete a mission, swipe left to recieve your next assignment.</string
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bG4-7E-kQx"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
                             <string key="value">We've gotten word that you're being tracked. The enemy is strong, cunning. You don't have long until contact.  You must use your time to save the ones around you.
@@ -468,10 +417,12 @@ Complete 3 encounters in 30 seconds.
 
 If you fail, you must swipe down and be Revealed.
 
+3 encounters, 30 seconds.
+
 Begin your countdown... now.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -495,12 +446,12 @@ Begin your countdown... now.</string>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">We have reason to believe you may have been comprimised.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will Break an encounter with you.  That is how you will know.  But beware, they will be quick to recover and attempt a Reveal.  
+                            <string key="value">We have reason to believe that you are in danger.  A specifically strong enemy has been impersonating our brethren.  You will need to pass a test to verify your identity.  Find the enemy.  They will Break an encounter with you.  That is how you will know.  But beware, they will be quick to recover and attempt a Reveal.  
 
 When you find the enemy, do not look again at this person for the rest of time.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -529,7 +480,7 @@ When you find the enemy, do not look again at this person for the rest of time.<
 Create an encounter.  Then repeat the encounter with the same person.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -553,12 +504,13 @@ Create an encounter.  Then repeat the encounter with the same person.</string>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">We've detected an anomaly.  A wide open soul, hyper-exposed.  There is a chance this soul will start to consume proximity souls if the void regresses any further.  Help this being and save the others that surround.
+                            <string key="value">We've detected an anomaly.  A wide open soul, ultra-exposed.  There is a chance this soul will start to consume proximity souls if the situation worsens.  Help this being and save the others that surround.
 
-Your mission, create an encounter and hold for as long as possible.  Do not break.  Record an encounter for every second that you can hold on to this soul.</string>
+Your mission, create an encounter and hold for as long as possible.  Do not break.  Record an encounter for every second that you can hold on to this soul.
+</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -582,7 +534,7 @@ Your mission, create an encounter and hold for as long as possible.  Do not brea
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">Our intel suggests an enemy in your proximity has obtained a new type of weapon, one unknown to us. What little details we have are sparse.  It's a weak energy collector, but extracts from a large group of targets.
+                            <string key="value">Our intel suggests an enemy in your proximity has obtained a new type of weapon, one not known to us. What little details we have are sparse.  It's an energy collector that extracts from a large group of targets.
 
 Time to move.
 
@@ -591,7 +543,7 @@ Cover 10 paces and establish an encounter with 5 subjects.
 Do not overstep or under encounter.  If you do, swipe down, as you will be revealed.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -615,12 +567,15 @@ Do not overstep or under encounter.  If you do, swipe down, as you will be revea
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">The enemy is upon you.  You have been Revealed, your powers taken, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.</string>
+                            <string key="value">The enemy is upon you.  You have been Revealed, your powers taken, your records expunged, your mission failed.  You are now of the soulless and must prepare for the coming of night.  Good luck.  We will look for you in future daylight.
+
+Game Over.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="firstscreen"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qB-cA-Q8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -642,12 +597,14 @@ Do not overstep or under encounter.  If you do, swipe down, as you will be revea
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="speak">
-                            <string key="value">You only have seconds.  The Reveal is not yet complete.  But you must move.  And they must not follow.
+                            <string key="value">You only have seconds.  The Reveal is not yet complete.  There is still a chance.  But you must move.  And they must not follow.
 
-Turn, move, go.  Do not create an Encounter during your excape.  If you do, you must swipe down.</string>
+Turn, move, go.  Do not create an Encounter during your excape.  If you do, you must swipe down.
+
+Swipe left if you succeed.</string>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                            <real key="value" value="0.20000000000000001"/>
+                            <real key="value" value="0.80000000000000004"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="questproxy"/>
                     </userDefinedRuntimeAttributes>
@@ -656,10 +613,10 @@ Turn, move, go.  Do not create an Encounter during your excape.  If you do, you 
             </objects>
             <point key="canvasLocation" x="2193" y="1642"/>
         </scene>
-        <!--View Controller-->
+        <!--Titles View Controller-->
         <scene sceneID="orb-Mt-IVt">
             <objects>
-                <viewController storyboardIdentifier="description" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tan-ZE-NYI" customClass="SFVOViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="description" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tan-ZE-NYI" customClass="SFTitlesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KOH-Co-4Pg"/>
                         <viewControllerLayoutGuide type="bottom" id="9cy-K8-LiK"/>
@@ -668,8 +625,8 @@ Turn, move, go.  Do not create an Encounter during your excape.  If you do, you 
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E08-xU-UH1">
-                                <rect key="frame" x="0.0" y="44" width="320" height="339"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E08-xU-UH1">
+                                <rect key="frame" x="0.0" y="167" width="320" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.93000000000000005" colorSpace="calibratedWhite"/>
                                 <string key="text">this is an audio game.
@@ -677,52 +634,189 @@ Turn, move, go.  Do not create an Encounter during your excape.  If you do, you 
 there are no graphics. only gestures. 
 play while using public transportation.
 
-it's also a rougelike. don't die.
+wear headphones.  hold your phone at your side.
 
-and don't close the app. 
-we ain't saving a damn thing.
+look casual.  blend in.
 </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="7To-iu-Jye">
-                                <rect key="frame" x="279" y="428" width="41" height="38"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ulc-Tm-eOK">
+                                <rect key="frame" x="270" y="510" width="41" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="dUD-rS-z3s"/>
+                                    <constraint firstAttribute="width" constant="41" id="jEB-pg-oAf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headphones.png" translatesAutoresizingMaskIntoConstraints="NO" id="NYZ-am-aeK">
+                                <rect key="frame" x="85" y="41" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ulc-Tm-eOK" secondAttribute="trailing" constant="9" id="TP4-oA-rEH"/>
+                            <constraint firstAttribute="bottom" secondItem="Ulc-Tm-eOK" secondAttribute="bottom" constant="20" id="waT-tI-udP"/>
+                        </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="rightswipeto" value="firstscreen"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="controls"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="sounds"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dontScore" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="muteSwipe" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideHelp" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="speak" value="They walk with such empty souls.  There is no warmth down here.  We can see that now."/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fadeDelay">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="promptView" destination="Ulc-Tm-eOK" id="WTn-FQ-Vbr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUk-cf-CNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-166" y="-242"/>
         </scene>
-        <!--Quest Proxy View Controller-->
-        <scene sceneID="2Ga-fz-YPq">
+        <!--Titles View Controller-->
+        <scene sceneID="5KL-AK-apq">
             <objects>
-                <viewController storyboardIdentifier="revealproxy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FmC-SU-cPT" customClass="SFQuestProxyViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sounds" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Kz-JH-JMI" customClass="SFTitlesViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P4n-eX-XRs"/>
-                        <viewControllerLayoutGuide type="bottom" id="uzR-lI-xXW"/>
+                        <viewControllerLayoutGuide type="top" id="vuu-Ne-UXN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vqd-rh-IcM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dhp-sm-Dx2">
+                    <view key="view" contentMode="scaleToFill" id="alf-jz-3TH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="52r-Vm-VAk">
+                                <rect key="frame" x="270" y="510" width="41" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Iyk-hi-CqY"/>
+                                    <constraint firstAttribute="height" constant="38" id="TtU-eA-LBN"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q80-sq-YOn">
+                                <rect key="frame" x="0.0" y="167" width="320" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.93000000000000005" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                </accessibility>
+                                <string key="text">if you like, listen to light background music.
+
+curated playlist via Spotify
+http://spoti.fi/1eBAoNW
+
+written by little wins. 
+with sound effects by Rob Miller. built at the philadelphia game forge, usa.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headphones.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1Z-1u-r5H">
+                                <rect key="frame" x="85" y="41" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="52r-Vm-VAk" secondAttribute="bottom" constant="20" id="POV-xI-Mey"/>
+                            <constraint firstAttribute="trailing" secondItem="52r-Vm-VAk" secondAttribute="trailing" constant="9" id="hRa-0u-6dj"/>
+                        </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="quests" value="revealed,revealattempt"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="controls"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdgfasdf"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dontScore" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideHelp" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="speak" value="And if we can see, we can save."/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fadeDelay">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="promptView" destination="52r-Vm-VAk" id="Pmg-fu-haH"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sey-cn-KVw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3u-O8-Hah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197" y="1633"/>
+            <point key="canvasLocation" x="223" y="-242"/>
+        </scene>
+        <!--Titles View Controller-->
+        <scene sceneID="Y09-cb-LTe">
+            <objects>
+                <viewController storyboardIdentifier="secondscreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YCR-DL-nvv" customClass="SFTitlesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0v-3L-G7N"/>
+                        <viewControllerLayoutGuide type="bottom" id="uH1-tC-eQd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MjQ-e5-uKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a 2014 global game jam submission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FP-Bb-I8D">
+                                <rect key="frame" x="18" y="271" width="285" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soulfill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C78-bd-RsI">
+                                <rect key="frame" x="58" y="212" width="201" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Swipe_Left.png" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-zQ-LY0">
+                                <rect key="frame" x="270" y="510" width="41" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="JFm-9D-QNh"/>
+                                    <constraint firstAttribute="width" constant="41" id="ObZ-DV-zU7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2XP-zQ-LY0" secondAttribute="trailing" constant="10" id="HUx-vR-ECe"/>
+                            <constraint firstAttribute="bottom" secondItem="2XP-zQ-LY0" secondAttribute="bottom" constant="20" id="PL5-In-QCI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z8F-s4-DFD"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftswipeto" value="description"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downswipeto" value="asdasdasd"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="dontScore" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="muteSwipe" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideHelp" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="speak" value="It was especially dark last night.  The dreams were overbearing.  These people you see around you?  They still need your help."/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fadeDelay">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="promptView" destination="2XP-zQ-LY0" id="eUD-nR-tHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfw-ZA-hGT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="-242"/>
         </scene>
     </scenes>
     <resources>

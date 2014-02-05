@@ -16,8 +16,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *scoreLabel;
 
-@property (nonatomic, retain) IBOutlet UIView *swipePrompt;
-
 -(void)showHelpView;
+-(void)updateScore;
 
 @end

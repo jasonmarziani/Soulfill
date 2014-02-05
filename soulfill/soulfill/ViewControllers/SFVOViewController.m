@@ -9,18 +9,18 @@
 #import "SFVOViewController.h"
 #import "SFBaseView.h"
 #import "SFRecordManager.h"
-
-@interface SFVOViewController ()
-
-@property (nonatomic, strong) SFBaseView *baseView;
-
-@end
-
+#import "SFSettingsManager.h"
+#import "SFSoundManager.h"
+#import "SFMacros.h"
 
 @implementation SFVOViewController
 
 @synthesize speak;
 @synthesize delay;
+//
+@synthesize dontScore;
+@synthesize muteSwipe;
+@synthesize hideHelp;
 
 // GESTURES
 @synthesize tapto;
@@ -39,14 +39,18 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if(speak == nil) return;
     
-    if(_baseView) [_baseView removeFromSuperview];
-    _baseView = (SFBaseView*)[[[NSBundle mainBundle] loadNibNamed:@"SFStoryView"
+    //NSLog(@"VIEWDIDAPPEAR: %@", [self description]);
+    
+    if(!hideHelp){
+        if(_baseView) [_baseView removeFromSuperview];
+        _baseView = (SFBaseView*)[[[NSBundle mainBundle] loadNibNamed:@"SFStoryView"
                                                             owner:self options:nil] objectAtIndex:0];
-    _baseView.text = speak;
-    [self.view addSubview:_baseView];
-    [self start];
+        _baseView.text = speak;
+        [self.view addSubview:_baseView];
+    }
+    
+    if(speak != NULL)[self start];
 }
 
 -(void)start
@@ -54,32 +58,60 @@
     [[SFVoiceOver shared] say:speak withDelay:delay];
 }
 
+#pragma mark - NAVIGATION
+
 -(void)gotoVOVC:(NSString*)id
 {
     SFVOViewController *vc = (SFVOViewController*)[self controllerByIdentifier:id];
+    NSLog(@"MOVING TO: %@", [vc description]);
     [self.navigationController pushViewController:vc animated:NO];
 }
 
-// GESTURE HANDLERS
+-(void)gotoNewQuest
+{
+    if([[SFSettingsManager shared].quests count] <= 0) return;
+    
+    // ANY TIME THIS IN INITIALIZED, IT PUSHES TO A RANDOM UIVIEWCONTROLLER
+    float index = [SFMacros randomInRange:[[SFSettingsManager shared].quests count] andLow:0];
+    NSString *target = (NSString*)[[SFSettingsManager shared].quests objectAtIndex:index];
+    NSLog(@"QUEST TARGET: %@", target);
+    [self gotoVOVC:target];
+}
+
+-(void)gotoReveal
+{
+    if([[SFSettingsManager shared].reveals count] <= 0) return;
+    
+    float index = [SFMacros randomInRange:[[SFSettingsManager shared].reveals count] andLow:0];
+    NSString *target = (NSString*)[[SFSettingsManager shared].reveals objectAtIndex:index];
+    if([target isEqualToString:@"revealed"]){
+        [SFRecordManager shared].score = 0; // RESET SCORE
+    }
+    NSLog(@"REVEAL TARGET: %@", target);
+    [self gotoVOVC:target];
+}
+
+#pragma mark - GESTURE HANDLERS
 
 -(void)respondToTap:(id)sender
 {
-    /*
-    if(tapto == nil) return;
-    if([SFVoiceOver shared].isSpeaking) return;
-    
-    // THIS IS NAVIGATION, IT SHOULD BE RECORD COLLECTION??
-    NSLog(@"ONETAP");   
-    [self gotoVOVC:tapto];
-     */
+    // OVERRIDE, DON'T DO ANYTHING
 }
 
 -(void)respondToDubTap:(id)sender
 {
+    if(dontScore) return; // NO SPEAKING, NO POINTS!
     NSLog(@"DUBTAP");
     // SHOULD PROBABLY PLAY SOME AUDIO HERE.
     [[SFRecordManager shared] addScore:1];
+    [_baseView updateScore];
+    [[SFSoundManager shared] playTapSound];
+}
 
+-(void)respondToTripTap:(id)sender
+{
+    if([SFVoiceOver shared].isSpeaking) return;
+    [self start];
 }
 
 -(void)respondToLeft:(id)sender
@@ -87,7 +119,12 @@
     if(leftswipeto == nil) return;
     if([SFVoiceOver shared].isSpeaking) return; // DON"T MOVE WHEN NARRATING (ALL HELL BREAKS LOSE)
     NSLog(@"LEFTSWIPE");
-    [self gotoVOVC:leftswipeto];
+    if([leftswipeto isEqualToString:@"questproxy"]){
+        [self gotoNewQuest];
+    }else{
+        [self gotoVOVC:leftswipeto];
+    }
+    if(!muteSwipe) [[SFSoundManager shared] playSwipeSound];
 }
 
 -(void)respondToRight:(id)sender
@@ -97,6 +134,7 @@
     
     NSLog(@"RIGHTSWIPE");
     [self gotoVOVC:rightswipeto];
+    if(!muteSwipe) [[SFSoundManager shared] playSwipeSound];
 }
 
 -(void)respondToUp:(id)sender
@@ -106,15 +144,18 @@
         // SHOW THE CONTROLS SUBVIEW
         [_baseView showHelpView];
     }
+    //[[SFSoundManager shared] playSwipeSound];
 }
 
 -(void)respondToDown:(id)sender
 {
     NSLog(@"DOWNSWIPE");
     if(downswipeto != nil) return;
+    if([SFVoiceOver shared].isSpeaking) return; // DON"T MOVE WHEN NARRATING (WOLFJUICE)
     
-    [[SFVoiceOver shared] stop];
-    [self gotoVOVC:@"revealproxy"];
+    
+    [self gotoReveal];
+    [[SFSoundManager shared] playSwipeSound];
 }
 
 @end

@@ -16,7 +16,6 @@
 @synthesize helpView;
 
 @synthesize scoreLabel;
-@synthesize swipePrompt;
 
 -(void)layoutSubviews
 {
@@ -26,28 +25,28 @@
     CGRect rect = [[UIScreen mainScreen] bounds];
     rect.size.height -= 20;
     [textfield setFrame:rect];
-    helpView.hidden = YES;
     
+    helpView.alpha = 0.1;
+    [self updateScore];
+}
+
+-(void)updateScore
+{
     scoreLabel.text = [NSString stringWithFormat:@"%i",[SFRecordManager shared].score];
-    
-    swipePrompt.hidden = YES;
 }
 
 -(void)setText:(NSString *)text
 {
     _text = text;
-    //textfield.selectable = YES;
-    //textfield.text = _text;
-    //textfield.selectable = NO;
     NSLog(@"%@",_text);
 }
 
 -(void)showHelpView
 {
-    if(helpView.hidden){
-        helpView.alpha = 0;
-        helpView.hidden = NO;
-        [UIView animateWithDuration:0.3 animations:^{
+    [self updateScore];
+    if(helpView.alpha < 1){
+        helpView.alpha = 0.1;
+        [UIView animateWithDuration:0.4 animations:^{
             helpView.alpha = 1;
         }];
     }else{
@@ -57,21 +56,9 @@
 
 -(void)hideHelpView
 {
-    [UIView animateWithDuration:0.3 animations:^{
-        helpView.alpha = 0;
-    } completion: ^(BOOL finished) {//creates a variable (BOOL) called "finished" that is set to *YES* when animation IS completed.
-        helpView.hidden = finished;//if animation is finished ("finished" == *YES*), then hidden = "finished" ... (aka hidden = *YES*)
+    [UIView animateWithDuration:0.4 animations:^{
+        helpView.alpha = 0.1;
     }];
 }
-
--(void)showSwipePrompt
-{
-    swipePrompt.alpha = 0;
-    swipePrompt.hidden = NO;
-    [UIView animateWithDuration:0.3 animations:^{
-        swipePrompt.alpha = 1;
-    }];
-}
-
 
 @end
