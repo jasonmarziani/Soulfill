@@ -27,10 +27,8 @@
 @property (nonatomic, strong) NSString *doubletapto;
 @property (nonatomic, strong) NSString *rightswipeto;
 @property (nonatomic, strong) NSString *leftswipeto;
-
 @property (nonatomic, strong) NSString *upswipeto;
 @property (nonatomic, strong) NSString *downswipeto;
-
 
 -(void)gotoVOVC:(NSString*)id;
 

@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8C6FFF662374559A0679241 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DD391D864C4968932DFB00 /* libPods.a */; };
+		182C53FD203DDDBC00A586EA /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C53FC203DDDBB00A586EA /* headphones.png */; };
+		182C53FF203DDDFF00A586EA /* Swipe_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C53FE203DDDFF00A586EA /* Swipe_Up.png */; };
+		182C5408203DDE1B00A586EA /* 2x_Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5400203DDE1A00A586EA /* 2x_Swipe_Right.png */; };
+		182C5409203DDE1B00A586EA /* Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5401203DDE1B00A586EA /* Swipe_Right.png */; };
+		182C540A203DDE1B00A586EA /* 2x_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5402203DDE1B00A586EA /* 2x_Tap.png */; };
+		182C540B203DDE1B00A586EA /* Single_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5403203DDE1B00A586EA /* Single_Tap.png */; };
+		182C540C203DDE1B00A586EA /* Hold_Timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5404203DDE1B00A586EA /* Hold_Timer.png */; };
+		182C540D203DDE1B00A586EA /* 2x_Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5405203DDE1B00A586EA /* 2x_Swipe_Left.png */; };
+		182C540E203DDE1B00A586EA /* Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5406203DDE1B00A586EA /* Swipe_Left.png */; };
+		182C540F203DDE1B00A586EA /* Swipe_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5407203DDE1B00A586EA /* Swipe_Down.png */; };
+		182C5411203DDE4800A586EA /* Double_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C5410203DDE4700A586EA /* Double_Tap.png */; };
 		E10848B0189B2DDA006BF9ED /* SFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E10848AF189B2DDA006BF9ED /* SFSoundManager.m */; };
 		E124AA891894ADC000A28B67 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E124AA881894ADC000A28B67 /* AudioToolbox.framework */; };
 		E124AA8B1894ADCB00A28B67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E124AA8A1894ADCB00A28B67 /* AVFoundation.framework */; };
@@ -36,17 +46,6 @@
 		E1B4DDF91894F22F005565A6 /* SFMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDF81894F22F005565A6 /* SFMacros.m */; };
 		E1B4DDFC18956194005565A6 /* SFSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B4DDFB18956194005565A6 /* SFSettingsManager.m */; };
 		E1B4DDFE18956412005565A6 /* SFStoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DDFD18956412005565A6 /* SFStoryView.xib */; };
-		E1B4DE0A18957400005565A6 /* Swipe_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0018957400005565A6 /* Swipe_Up.png */; };
-		E1B4DE0B18957400005565A6 /* Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0118957400005565A6 /* Swipe_Right.png */; };
-		E1B4DE0C18957400005565A6 /* Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0218957400005565A6 /* Swipe_Left.png */; };
-		E1B4DE0D18957400005565A6 /* Swipe_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0318957400005565A6 /* Swipe_Down.png */; };
-		E1B4DE0E18957400005565A6 /* Single_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0418957400005565A6 /* Single_Tap.png */; };
-		E1B4DE0F18957400005565A6 /* Hold_Timer.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0518957400005565A6 /* Hold_Timer.png */; };
-		E1B4DE1018957400005565A6 /* Double_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0618957400005565A6 /* Double_Tap.png */; };
-		E1B4DE1118957400005565A6 /* 2x_Tap.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0718957400005565A6 /* 2x_Tap.png */; };
-		E1B4DE1218957400005565A6 /* 2x_Swipe_Right.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */; };
-		E1B4DE1318957400005565A6 /* 2x_Swipe_Left.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */; };
-		E1B4DE1518957528005565A6 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B4DE1418957528005565A6 /* headphones.png */; };
 		E1DFE69718A1D5FE002BAE1B /* doubletap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1DFE69518A1D5FE002BAE1B /* doubletap.mp3 */; };
 		E1DFE69818A1D5FE002BAE1B /* theswipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E1DFE69618A1D5FE002BAE1B /* theswipe.mp3 */; };
 		E1DFE69B18A1D877002BAE1B /* SFTitlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DFE69A18A1D877002BAE1B /* SFTitlesViewController.m */; };
@@ -56,6 +55,7 @@
 		E1DFE6A418A1FA79002BAE1B /* icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFE6A218A1FA79002BAE1B /* icon-58.png */; };
 		E1DFE6A518A1FA79002BAE1B /* icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFE6A318A1FA79002BAE1B /* icon-80.png */; };
 		E1DFE6A718A1FABE002BAE1B /* Default-960.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFE6A618A1FABE002BAE1B /* Default-960.png */; };
+		E852DEF80E2FB9E0B6DE94F5 /* libPods-soulfill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C853EC2440BD09CE62B92 /* libPods-soulfill.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32DD391D864C4968932DFB00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		91C750F42CCD45B79CA5F82F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		182C53FC203DDDBB00A586EA /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headphones.png; path = soulfill/headphones.png; sourceTree = SOURCE_ROOT; };
+		182C53FE203DDDFF00A586EA /* Swipe_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Up.png; path = Resources/Swipe_Up.png; sourceTree = "<group>"; };
+		182C5400203DDE1A00A586EA /* 2x_Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Right.png; path = Resources/2x_Swipe_Right.png; sourceTree = "<group>"; };
+		182C5401203DDE1B00A586EA /* Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Right.png; path = Resources/Swipe_Right.png; sourceTree = "<group>"; };
+		182C5402203DDE1B00A586EA /* 2x_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Tap.png; path = Resources/2x_Tap.png; sourceTree = "<group>"; };
+		182C5403203DDE1B00A586EA /* Single_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Single_Tap.png; path = Resources/Single_Tap.png; sourceTree = "<group>"; };
+		182C5404203DDE1B00A586EA /* Hold_Timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hold_Timer.png; path = Resources/Hold_Timer.png; sourceTree = "<group>"; };
+		182C5405203DDE1B00A586EA /* 2x_Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Left.png; path = Resources/2x_Swipe_Left.png; sourceTree = "<group>"; };
+		182C5406203DDE1B00A586EA /* Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Left.png; path = Resources/Swipe_Left.png; sourceTree = "<group>"; };
+		182C5407203DDE1B00A586EA /* Swipe_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Down.png; path = Resources/Swipe_Down.png; sourceTree = "<group>"; };
+		182C5410203DDE4700A586EA /* Double_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Double_Tap.png; path = Resources/Double_Tap.png; sourceTree = "<group>"; };
+		235C853EC2440BD09CE62B92 /* libPods-soulfill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-soulfill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30ACF708F363D3D085DA32DC /* Pods-soulfill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soulfill.release.xcconfig"; path = "Pods/Target Support Files/Pods-soulfill/Pods-soulfill.release.xcconfig"; sourceTree = "<group>"; };
+		3DAD56B954F6D50A2DF26DF3 /* Pods-soulfill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soulfill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soulfill/Pods-soulfill.debug.xcconfig"; sourceTree = "<group>"; };
 		E10848AE189B2DDA006BF9ED /* SFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSoundManager.h; path = Managers/SFSoundManager.h; sourceTree = "<group>"; };
 		E10848AF189B2DDA006BF9ED /* SFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSoundManager.m; path = Managers/SFSoundManager.m; sourceTree = "<group>"; };
 		E124AA881894ADC000A28B67 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -114,17 +126,6 @@
 		E1B4DDFA18956194005565A6 /* SFSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSettingsManager.h; path = Managers/SFSettingsManager.h; sourceTree = "<group>"; };
 		E1B4DDFB18956194005565A6 /* SFSettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSettingsManager.m; path = Managers/SFSettingsManager.m; sourceTree = "<group>"; };
 		E1B4DDFD18956412005565A6 /* SFStoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SFStoryView.xib; path = Views/SFStoryView.xib; sourceTree = "<group>"; };
-		E1B4DE0018957400005565A6 /* Swipe_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Up.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Up.png"; sourceTree = "<group>"; };
-		E1B4DE0118957400005565A6 /* Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Right.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Right.png"; sourceTree = "<group>"; };
-		E1B4DE0218957400005565A6 /* Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Left.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Left.png"; sourceTree = "<group>"; };
-		E1B4DE0318957400005565A6 /* Swipe_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Swipe_Down.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Swipe_Down.png"; sourceTree = "<group>"; };
-		E1B4DE0418957400005565A6 /* Single_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Single_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Single_Tap.png"; sourceTree = "<group>"; };
-		E1B4DE0518957400005565A6 /* Hold_Timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hold_Timer.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Hold_Timer.png"; sourceTree = "<group>"; };
-		E1B4DE0618957400005565A6 /* Double_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Double_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/Double_Tap.png"; sourceTree = "<group>"; };
-		E1B4DE0718957400005565A6 /* 2x_Tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Tap.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Tap.png"; sourceTree = "<group>"; };
-		E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Right.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Swipe_Right.png"; sourceTree = "<group>"; };
-		E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2x_Swipe_Left.png; path = "../../../../Downloads/touch-gesture-icons/PNG/256/2x_Swipe_Left.png"; sourceTree = "<group>"; };
-		E1B4DE1418957528005565A6 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headphones.png; path = ../../../../Downloads/headphones.png; sourceTree = "<group>"; };
 		E1DFE69518A1D5FE002BAE1B /* doubletap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doubletap.mp3; sourceTree = "<group>"; };
 		E1DFE69618A1D5FE002BAE1B /* theswipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theswipe.mp3; sourceTree = "<group>"; };
 		E1DFE69918A1D877002BAE1B /* SFTitlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFTitlesViewController.h; path = ViewControllers/SFTitlesViewController.h; sourceTree = "<group>"; };
@@ -147,7 +148,7 @@
 				E1AF10691894AA6F000A9293 /* CoreGraphics.framework in Frameworks */,
 				E1AF106B1894AA6F000A9293 /* UIKit.framework in Frameworks */,
 				E1AF10671894AA6F000A9293 /* Foundation.framework in Frameworks */,
-				D8C6FFF662374559A0679241 /* libPods.a in Frameworks */,
+				E852DEF80E2FB9E0B6DE94F5 /* libPods-soulfill.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +165,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE243AF243B2AA811A02356D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DAD56B954F6D50A2DF26DF3 /* Pods-soulfill.debug.xcconfig */,
+				30ACF708F363D3D085DA32DC /* Pods-soulfill.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E10848B1189B2E41006BF9ED /* audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,17 +238,17 @@
 				E1DFE69D18A1F992002BAE1B /* icon-60.png */,
 				E1DFE69E18A1F992002BAE1B /* icon-120.png */,
 				E10848B1189B2E41006BF9ED /* audio */,
-				E1B4DE1418957528005565A6 /* headphones.png */,
-				E1B4DE0018957400005565A6 /* Swipe_Up.png */,
-				E1B4DE0118957400005565A6 /* Swipe_Right.png */,
-				E1B4DE0218957400005565A6 /* Swipe_Left.png */,
-				E1B4DE0318957400005565A6 /* Swipe_Down.png */,
-				E1B4DE0418957400005565A6 /* Single_Tap.png */,
-				E1B4DE0518957400005565A6 /* Hold_Timer.png */,
-				E1B4DE0618957400005565A6 /* Double_Tap.png */,
-				E1B4DE0718957400005565A6 /* 2x_Tap.png */,
-				E1B4DE0818957400005565A6 /* 2x_Swipe_Right.png */,
-				E1B4DE0918957400005565A6 /* 2x_Swipe_Left.png */,
+				182C53FC203DDDBB00A586EA /* headphones.png */,
+				182C53FE203DDDFF00A586EA /* Swipe_Up.png */,
+				182C5410203DDE4700A586EA /* Double_Tap.png */,
+				182C5402203DDE1B00A586EA /* 2x_Tap.png */,
+				182C5404203DDE1B00A586EA /* Hold_Timer.png */,
+				182C5403203DDE1B00A586EA /* Single_Tap.png */,
+				182C5407203DDE1B00A586EA /* Swipe_Down.png */,
+				182C5406203DDE1B00A586EA /* Swipe_Left.png */,
+				182C5405203DDE1B00A586EA /* 2x_Swipe_Left.png */,
+				182C5400203DDE1A00A586EA /* 2x_Swipe_Right.png */,
+				182C5401203DDE1B00A586EA /* Swipe_Right.png */,
 				E124AA951894BC2100A28B67 /* logo-600.png */,
 			);
 			name = Resources;
@@ -253,13 +263,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		E124AAAD1894DC6900A28B67 /* StoryControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = StoryControllers;
-			sourceTree = "<group>";
-		};
 		E1AF105A1894AA6F000A9293 = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +270,7 @@
 				E1AF108B1894AA6F000A9293 /* soulfillTests */,
 				E1AF10651894AA6F000A9293 /* Frameworks */,
 				E1AF10641894AA6F000A9293 /* Products */,
-				91C750F42CCD45B79CA5F82F /* Pods.xcconfig */,
+				CE243AF243B2AA811A02356D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,7 +292,7 @@
 				E1AF10681894AA6F000A9293 /* CoreGraphics.framework */,
 				E1AF106A1894AA6F000A9293 /* UIKit.framework */,
 				E1AF10851894AA6F000A9293 /* XCTest.framework */,
-				32DD391D864C4968932DFB00 /* libPods.a */,
+				235C853EC2440BD09CE62B92 /* libPods-soulfill.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,7 +300,6 @@
 		E1AF106C1894AA6F000A9293 /* soulfill */ = {
 			isa = PBXGroup;
 			children = (
-				E124AAAD1894DC6900A28B67 /* StoryControllers */,
 				E124AAA91894D5A700A28B67 /* Categories */,
 				E124AA871894AB7E00A28B67 /* Resources */,
 				E124AA861894AB6B00A28B67 /* ViewControllers */,
@@ -348,11 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1AF10951894AA6F000A9293 /* Build configuration list for PBXNativeTarget "soulfill" */;
 			buildPhases = (
-				959021D8181D4313B7C8AC4E /* Check Pods Manifest.lock */,
+				77F3AE3B128E461F9D679A62 /* [CP] Check Pods Manifest.lock */,
 				E1AF105F1894AA6F000A9293 /* Sources */,
 				E1AF10601894AA6F000A9293 /* Frameworks */,
 				E1AF10611894AA6F000A9293 /* Resources */,
-				F6B62111588C4A80918290FB /* Copy Pods Resources */,
+				C3EFE07FA106890C00EDC7D6 /* [CP] Embed Pods Frameworks */,
+				8EBDE187D2B52FED2F1DF29D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -423,30 +426,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1B4DE1518957528005565A6 /* headphones.png in Resources */,
-				E1B4DE1018957400005565A6 /* Double_Tap.png in Resources */,
+				182C540F203DDE1B00A586EA /* Swipe_Down.png in Resources */,
 				E1DFE69818A1D5FE002BAE1B /* theswipe.mp3 in Resources */,
-				E1B4DE1218957400005565A6 /* 2x_Swipe_Right.png in Resources */,
 				E1AF107F1894AA6F000A9293 /* Images.xcassets in Resources */,
-				E1B4DE0A18957400005565A6 /* Swipe_Up.png in Resources */,
-				E1B4DE0B18957400005565A6 /* Swipe_Right.png in Resources */,
+				182C53FD203DDDBC00A586EA /* headphones.png in Resources */,
 				E1DFE6A418A1FA79002BAE1B /* icon-58.png in Resources */,
-				E1B4DE0C18957400005565A6 /* Swipe_Left.png in Resources */,
 				E1DFE6A118A1F992002BAE1B /* icon-120.png in Resources */,
+				182C540C203DDE1B00A586EA /* Hold_Timer.png in Resources */,
 				E1AF10711894AA6F000A9293 /* InfoPlist.strings in Resources */,
+				182C5408203DDE1B00A586EA /* 2x_Swipe_Right.png in Resources */,
+				182C5409203DDE1B00A586EA /* Swipe_Right.png in Resources */,
 				E1DFE6A718A1FABE002BAE1B /* Default-960.png in Resources */,
-				E1B4DE0F18957400005565A6 /* Hold_Timer.png in Resources */,
-				E1B4DE1118957400005565A6 /* 2x_Tap.png in Resources */,
 				E1DFE6A518A1FA79002BAE1B /* icon-80.png in Resources */,
 				E1DFE69F18A1F992002BAE1B /* Default.png in Resources */,
+				182C5411203DDE4800A586EA /* Double_Tap.png in Resources */,
 				E1B4DDFE18956412005565A6 /* SFStoryView.xib in Resources */,
 				E1DFE69718A1D5FE002BAE1B /* doubletap.mp3 in Resources */,
+				182C540E203DDE1B00A586EA /* Swipe_Left.png in Resources */,
 				E1DFE6A018A1F992002BAE1B /* icon-60.png in Resources */,
 				E1AF107A1894AA6F000A9293 /* Main.storyboard in Resources */,
-				E1B4DE0E18957400005565A6 /* Single_Tap.png in Resources */,
-				E1B4DE1318957400005565A6 /* 2x_Swipe_Left.png in Resources */,
+				182C540A203DDE1B00A586EA /* 2x_Tap.png in Resources */,
+				182C540B203DDE1B00A586EA /* Single_Tap.png in Resources */,
+				182C53FF203DDDFF00A586EA /* Swipe_Up.png in Resources */,
+				182C540D203DDE1B00A586EA /* 2x_Swipe_Left.png in Resources */,
 				E124AA961894BC2100A28B67 /* logo-600.png in Resources */,
-				E1B4DE0D18957400005565A6 /* Swipe_Down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,34 +464,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		959021D8181D4313B7C8AC4E /* Check Pods Manifest.lock */ = {
+		77F3AE3B128E461F9D679A62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soulfill-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6B62111588C4A80918290FB /* Copy Pods Resources */ = {
+		8EBDE187D2B52FED2F1DF29D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soulfill/Pods-soulfill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EFE07FA106890C00EDC7D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soulfill/Pods-soulfill-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -638,7 +659,7 @@
 		};
 		E1AF10961894AA6F000A9293 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91C750F42CCD45B79CA5F82F /* Pods.xcconfig */;
+			baseConfigurationReference = 3DAD56B954F6D50A2DF26DF3 /* Pods-soulfill.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -653,7 +674,7 @@
 		};
 		E1AF10971894AA6F000A9293 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91C750F42CCD45B79CA5F82F /* Pods.xcconfig */;
+			baseConfigurationReference = 30ACF708F363D3D085DA32DC /* Pods-soulfill.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Little Wins LLC (VW6K2ZGJ7P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Little Wins LLC (VW6K2ZGJ7P)";

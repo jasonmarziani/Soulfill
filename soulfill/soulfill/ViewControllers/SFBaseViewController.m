@@ -32,11 +32,6 @@
     dubTapRecognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:dubTapRecognizer];
     
-    UITapGestureRecognizer *tripTapRecognizer = [[UITapGestureRecognizer alloc]
-                                                initWithTarget:self action:@selector(respondToTripTap:)];
-    tripTapRecognizer.numberOfTapsRequired = 3;
-    [self.view addGestureRecognizer:tripTapRecognizer];
-    
     
     // SWIPES R, L, D, U
     UISwipeGestureRecognizer *lSwipeRec = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(respondToLeft:)];
@@ -57,6 +52,8 @@
     
 }
 
+// tap handlers
+
 -(void)respondToTap:(id)sender
 {
     NSLog(@"SINGLE TAP");
@@ -66,21 +63,10 @@
 -(void)respondToDubTap:(id)sender
 {
     NSLog(@"DUBS TAP");
-    
-    // STOP VOICE
     [[SFVoiceOver shared] stop];
-    
-    // TYPICALLY A CONTINUE.
 }
 
--(void)respondToTripTap:(id)sender
-{
-    NSLog(@"TRIPS TAP");
-    
-    // NOT DEFINED
-}
-
-//
+// swipe handlers
 
 -(void)respondToLeft:(id)sender
 {
@@ -100,13 +86,6 @@
 -(void)respondToDown:(id)sender
 {
     NSLog(@"DOWN SWIPE");
-}
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

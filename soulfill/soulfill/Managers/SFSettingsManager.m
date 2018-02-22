@@ -25,8 +25,10 @@ static SFSettingsManager *manager = nil;
 
 + (SFSettingsManager *)shared
 {
-    @synchronized(self) {
-        if (!manager){
+    @synchronized(self)
+    {
+        if (!manager)
+        {
             manager = [[SFSettingsManager alloc] init];
             [manager start];
         }
@@ -48,7 +50,6 @@ static SFSettingsManager *manager = nil;
     self.quests = [questStr componentsSeparatedByString:@","];
     NSString *revealStr = @"revealed,revealattempt";
     self.reveals = [revealStr componentsSeparatedByString:@","];
-
 }
 
 @end

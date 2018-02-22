@@ -39,10 +39,9 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    //NSLog(@"VIEWDIDAPPEAR: %@", [self description]);
-    
-    if(!hideHelp){
+ 
+    if(!hideHelp)
+    {
         if(_baseView) [_baseView removeFromSuperview];
         _baseView = (SFBaseView*)[[[NSBundle mainBundle] loadNibNamed:@"SFStoryView"
                                                             owner:self options:nil] objectAtIndex:0];
@@ -63,7 +62,6 @@
 -(void)gotoVOVC:(NSString*)id
 {
     SFVOViewController *vc = (SFVOViewController*)[self controllerByIdentifier:id];
-    NSLog(@"MOVING TO: %@", [vc description]);
     [self.navigationController pushViewController:vc animated:NO];
 }
 
@@ -71,10 +69,9 @@
 {
     if([[SFSettingsManager shared].quests count] <= 0) return;
     
-    // ANY TIME THIS IN INITIALIZED, IT PUSHES TO A RANDOM UIVIEWCONTROLLER
+    // PUSH TO A RANDOM QUEST UIVIEWCONTROLLER
     float index = [SFMacros randomInRange:[[SFSettingsManager shared].quests count] andLow:0];
     NSString *target = (NSString*)[[SFSettingsManager shared].quests objectAtIndex:index];
-    NSLog(@"QUEST TARGET: %@", target);
     [self gotoVOVC:target];
 }
 
@@ -82,12 +79,13 @@
 {
     if([[SFSettingsManager shared].reveals count] <= 0) return;
     
+    // PUSH TO A RANDOM REVEAL UIVIEWCONTROLLER
     float index = [SFMacros randomInRange:[[SFSettingsManager shared].reveals count] andLow:0];
     NSString *target = (NSString*)[[SFSettingsManager shared].reveals objectAtIndex:index];
-    if([target isEqualToString:@"revealed"]){
+    if([target isEqualToString:@"revealed"])
+    {
         [SFRecordManager shared].score = 0; // RESET SCORE
     }
-    NSLog(@"REVEAL TARGET: %@", target);
     [self gotoVOVC:target];
 }
 
@@ -101,8 +99,6 @@
 -(void)respondToDubTap:(id)sender
 {
     if(dontScore) return; // NO SPEAKING, NO POINTS!
-    NSLog(@"DUBTAP");
-    // SHOULD PROBABLY PLAY SOME AUDIO HERE.
     [[SFRecordManager shared] addScore:1];
     [_baseView updateScore];
     [[SFSoundManager shared] playTapSound];
@@ -117,11 +113,13 @@
 -(void)respondToLeft:(id)sender
 {
     if(leftswipeto == nil) return;
-    if([SFVoiceOver shared].isSpeaking) return; // DON"T MOVE WHEN NARRATING (ALL HELL BREAKS LOSE)
-    NSLog(@"LEFTSWIPE");
-    if([leftswipeto isEqualToString:@"questproxy"]){
+    if([SFVoiceOver shared].isSpeaking) return;
+    if([leftswipeto isEqualToString:@"questproxy"])
+    {
         [self gotoNewQuest];
-    }else{
+    }
+    else
+    {
         [self gotoVOVC:leftswipeto];
     }
     if(!muteSwipe) [[SFSoundManager shared] playSwipeSound];
@@ -130,29 +128,21 @@
 -(void)respondToRight:(id)sender
 {
     if(rightswipeto == nil) return;
-    if([SFVoiceOver shared].isSpeaking) return; // DON"T MOVE WHEN NARRATING (BABIES CRAY CRAY)
+    if([SFVoiceOver shared].isSpeaking) return;
     
-    NSLog(@"RIGHTSWIPE");
     [self gotoVOVC:rightswipeto];
     if(!muteSwipe) [[SFSoundManager shared] playSwipeSound];
 }
 
 -(void)respondToUp:(id)sender
 {
-    NSLog(@"UPSWIPE");
-    if(_baseView){
-        // SHOW THE CONTROLS SUBVIEW
-        [_baseView showHelpView];
-    }
-    //[[SFSoundManager shared] playSwipeSound];
+    if(_baseView) [_baseView showHelpView];
 }
 
 -(void)respondToDown:(id)sender
 {
-    NSLog(@"DOWNSWIPE");
     if(downswipeto != nil) return;
-    if([SFVoiceOver shared].isSpeaking) return; // DON"T MOVE WHEN NARRATING (WOLFJUICE)
-    
+    if([SFVoiceOver shared].isSpeaking) return;
     
     [self gotoReveal];
     [[SFSoundManager shared] playSwipeSound];

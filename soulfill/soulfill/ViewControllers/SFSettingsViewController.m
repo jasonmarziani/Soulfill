@@ -8,12 +8,8 @@
 
 #import "SFSettingsViewController.h"
 
-@interface SFSettingsViewController ()
-
-@end
 
 @implementation SFSettingsViewController
-
 
 - (void)viewDidLoad
 {

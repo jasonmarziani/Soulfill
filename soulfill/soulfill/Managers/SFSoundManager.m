@@ -8,6 +8,11 @@
 
 #import "SFSoundManager.h"
 
+@interface SFSoundManager()
+{
+    AVAudioPlayer *_player;
+}
+@end
 
 @implementation SFSoundManager
 
@@ -15,8 +20,10 @@ static SFSoundManager *manager = nil;
 
 + (SFSoundManager *)shared
 {
-    @synchronized(self) {
-        if (!manager){
+    @synchronized(self)
+    {
+        if (!manager)
+        {
             manager = [[SFSoundManager alloc] init];
         }
     }
@@ -26,7 +33,6 @@ static SFSoundManager *manager = nil;
 
 -(void)playTapSound
 {
-    NSLog(@"PLAY TAP SOUND");
     NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"doubletap"
                                               withExtension:@"mp3"];
     [self playSound:soundURL atVolume:0.4f];
@@ -34,7 +40,6 @@ static SFSoundManager *manager = nil;
 
 -(void)playSwipeSound
 {
-    NSLog(@"PLAY SWIPE SOUND");
     NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"theswipe"
                                                              withExtension:@"mp3"];
     [self playSound:soundURL atVolume:0.4f];
@@ -43,7 +48,6 @@ static SFSoundManager *manager = nil;
 
 -(void)playSound:(NSURL*)url atVolume:(float)volume
 {
-    NSLog(@"PLAY URL: %@", [url description]);
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     _player.numberOfLoops = 0; //Infinite
     [_player prepareToPlay];

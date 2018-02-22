@@ -17,7 +17,6 @@
 
 -(void)respondToTap:(id)sender; // MAKE SURE TO CALL SUPER
 -(void)respondToDubTap:(id)sender;
--(void)respondToTripTap:(id)sender;
 //
 -(void)respondToLeft:(id)sender;
 -(void)respondToRight:(id)sender;

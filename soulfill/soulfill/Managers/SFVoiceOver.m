@@ -78,13 +78,11 @@ static SFVoiceOver *manager = nil;
 
 -(void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    NSLog(@"SPEECH COMPLETE");
     self.isSpeaking = NO;
 }
 
 -(void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance
 {
-    NSLog(@"CANCELED SPEECH");
     self.isSpeaking = NO;
 }
 

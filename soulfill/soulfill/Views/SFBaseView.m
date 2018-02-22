@@ -38,7 +38,6 @@
 -(void)setText:(NSString *)text
 {
     _text = text;
-    NSLog(@"%@",_text);
 }
 
 -(void)showHelpView

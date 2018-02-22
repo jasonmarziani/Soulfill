@@ -13,7 +13,7 @@
 @interface SFSoundManager : NSObject
 
 +(SFSoundManager *)shared;
-@property(nonatomic, strong) AVAudioPlayer *player;
+//@property(nonatomic, strong) AVAudioPlayer *player;
 
 -(void)playTapSound;
 -(void)playSwipeSound;

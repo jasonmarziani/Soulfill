@@ -18,7 +18,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //_titleView.alpha = 0;
     self.view.alpha = 0;
     _promptView.alpha = 0;
 }
@@ -32,9 +31,7 @@
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.7f delay:1.5f options:0 animations:^{
             _promptView.alpha = 1;
-        } completion:^(BOOL finished) {
-        }];
-
+        } completion:^(BOOL finished){}];
     }];
 }
 

@@ -12,9 +12,8 @@
 
 @property (nonatomic, retain) IBOutlet UITextView *textfield;
 @property (nonatomic, retain) IBOutlet UIView *helpView;
-@property (nonatomic, retain) NSString *text;
-
 @property (nonatomic, retain) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, retain) NSString *text;
 
 -(void)showHelpView;
 -(void)updateScore;
